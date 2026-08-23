@@ -420,3 +420,861 @@ adwoa bought three dozen straws for one cedi fifty
 kwame bought two packs of exercise books for six cedis
 akosua bought five notebooks for ten cedis on credit
 yaw bought one roll of sellotape for one cedi
+i sold one bag of rice to ama for fifty cedis
+i sold two bags of sugar to kofi for eighty cedis
+i sold one bottle of cooking oil to adwoa for fifteen cedis
+i sold three sachets of milk to kwame for three cedis
+i sold one tin of milo to akosua for ten cedis
+i sold two packs of sugar to yaw for eight cedis
+i sold one bag of salt to ama for five cedis
+i sold five eggs to kofi at one cedi each
+i sold one loaf of bread to adwoa for three cedis
+i sold two tins of tomatoes to kwame for four cedis
+i sold one bottle of groundnut oil to akosua for twelve cedis
+i sold three sachets of gari to yaw for two cedis
+i sold one jar of shito to ama for five cedis
+i sold two pieces of ginger to kofi for one cedi
+i sold one bag of pepper to adwoa for three cedis
+i sold five balls of kenkey to kwame at one cedi each
+i sold two wraps of waakye to akosua for two cedis
+i sold one plate of jollof rice to yaw for five cedis
+i sold three packs of indomie to ama for six cedis
+i sold one tin of sardines to kofi for three cedis
+i sold two bars of key soap to adwoa for four cedis
+i sold one bottle of detergent to kwame for five cedis
+i sold three sponges to akosua at one cedi each
+i sold one box of matches to yaw for fifty pesewas
+i sold two packets of candles to ama for two cedis
+i sold four batteries to kofi at one cedi each
+i sold one torch to adwoa for ten cedis
+i sold one umbrella to kwame for eight cedis
+i sold two pairs of slippers to akosua for six cedis
+i sold one pair of sandals to yaw for fifteen cedis
+i sold two yards of cloth to ama for ten cedis
+i sold one bottle of mineral to kofi for three cedis
+i sold two bottles of coca cola to adwoa for six cedis
+i sold one bottle of fanta to kwame for three cedis
+i sold one bottle of sprite to akosua for three cedis
+i sold one can of malt to yaw for five cedis
+i sold one bottle of voltic water to ama for two cedis
+i sold one box of frozen chicken to kofi for forty cedis
+i sold one crate of eggs to adwoa for thirty six cedis
+i sold two cartons of milk to kwame for twenty four cedis
+i sold one gallon of oil to akosua for fifty cedis
+i sold one bag of cement to yaw for thirty five cedis
+i sold two blocks to ama for one cedi
+i sold one airtime card to kofi for five cedis
+i sold two scratch cards to adwoa for ten cedis
+i sold one mtn credit to kwame for two cedis
+i sold one vodafone bundle to akosua for five cedis
+i sold one charger to yaw for fifteen cedis
+i sold one earpiece to ama for five cedis
+i sold one power bank to kofi for forty cedis
+i charged five phones today at one cedi each
+i did typing for adwoa for two cedis
+i did photocopy for kwame at fifty pesewas per page
+i printed ten pages for akosua at fifty pesewas each
+i laminated one document for yaw for two cedis
+i sold one bag of charcoal to ama for ten cedis
+i sold one pile of firewood to kofi for five cedis
+i sold one coconut to adwoa for one cedi
+i sold three oranges to kwame for two cedis
+i sold two lemons to akosua for one cedi
+i sold one pineapple to yaw for three cedis
+i sold five bananas to ama for two cedis
+i sold one pawpaw to kofi for two cedis
+i sold one watermelon to adwoa for ten cedis
+i sold three avocados to kwame for three cedis
+i sold one bunch of plantain to akosua for five cedis
+i sold two tubers of yam to yaw for six cedis
+i sold one bag of cassava to ama for eight cedis
+i sold three pieces of cocoyam to kofi for two cedis
+i sold one bag of maize to adwoa for twenty cedis
+i sold two tins of beans to kwame for four cedis
+i sold one smoked fish to akosua for five cedis
+i sold two dried fish to yaw for four cedis
+i sold one fresh fish to ama for six cedis
+i sold one crate of minerals to kofi for thirty cedis
+i sold two cartons of indomie to adwoa for twenty cedis
+i sold one bag of flour to kwame for thirty cedis
+i sold one tin of milk powder to akosua for eight cedis
+i sold two sachets of Milo to yaw for one cedi
+i sold one bottle of palm oil to ama for five cedis
+i sold one gallon of palm oil to kofi for twenty cedis
+i sold two tins of tomato paste to adwoa for four cedis
+i sold one pack of curry powder to kwame for two cedis
+i sold one bottle of soy sauce to akosua for three cedis
+i sold one pack of Maggi cubes to yaw for one cedi
+i sold one bag of gari to ama for fifteen cedis
+i sold two bottles of honey to kofi for ten cedis
+i sold one tin of milo to adwoa for ten cedis
+i sold one tin of Nescafe to kwame for eight cedis
+i sold one pack of tea bags to akosua for two cedis
+i sold one bag of groundnut to yaw for twelve cedis
+i sold one bottle of palm wine to ama for five cedis
+i sold one bottle of sobolo to kofi for three cedis
+i sold one bottle of bissap to adwoa for two cedis
+i sold one bottle of lamugin to kwame for two cedis
+i sold one pack of ice cream to akosua for five cedis
+i sold one fan ice to yaw for one cedi
+i sold one chocolate to ama for fifty pesewas
+i sold one pack of biscuits to kofi for one cedi
+i sold one tin of Milo to adwoa for ten cedis
+i sold one roll of toilet paper to kwame for two cedis
+i sold one pack of baby diapers to akosua for ten cedis
+i sold one packet of sanitary pads to yaw for five cedis
+i sold one pack of cotton wool to ama for two cedis
+i sold one tube of toothpaste to kofi for three cedis
+i sold one toothbrush to adwoa for one cedi
+i sold one bottle of Dettol to kwame for five cedis
+i sold one pomade to akosua for three cedis
+i sold one hair cream to yaw for five cedis
+i sold one pomade tin to ama for two cedis
+i sold one weave to kofi for fifteen cedis
+i sold one wig to adwoa for twenty cedis
+i sold one earring to kwame for two cedis
+i sold one necklace to akosua for five cedis
+i sold one ring to yaw for three cedis
+i sold one wristwatch to ama for ten cedis
+i sold one belt to kofi for five cedis
+i sold one cap to adwoa for three cedis
+i sold one pair of socks to kwame for two cedis
+i sold one singlet to akosua for five cedis
+i sold one boxer to yaw for three cedis
+i sold one towel to ama for eight cedis
+i sold one bedsheet to kofi for fifteen cedis
+i sold one pillowcase to adwoa for three cedis
+i sold one curtain to kwame for ten cedis
+i sold one carpet to akosua for twenty cedis
+i sold one bowl set to yaw for ten cedis
+i sold one plate set to ama for fifteen cedis
+i sold one cup set to kofi for five cedis
+i sold one spoon set to adwoa for three cedis
+i sold one knife set to kwame for five cedis
+i sold one cooler to akosua for ten cedis
+i sold one flask to yaw for five cedis
+i sold one kettle to ama for eight cedis
+i sold one saucepan to kofi for ten cedis
+i sold one frying pan to adwoa for five cedis
+i sold one ladle to kwame for two cedis
+i sold one colander to akosua for three cedis
+i sold one blender to yaw for thirty cedis
+i sold one iron to ama for twenty five cedis
+i sold one extension board to kofi for ten cedis
+i sold one bulb to adwoa for two cedis
+i sold one switch to kwame for three cedis
+i sold one socket to akosua for two cedis
+esi bought two bags of rice for one hundred cedis
+mensah bought one gallon of oil for fifty cedis
+owusu bought five loaves of bread for fifteen cedis
+afia bought three crates of eggs for one hundred and eight cedis
+ekow bought one carton of indomie for twelve cedis
+kwesi bought one box of frozen chicken for forty cedis
+efua bought two bags of sugar for eighty cedis
+kwabena bought one bag of gari for fifteen cedis
+aba bought one bag of maize for twenty cedis
+yaa bought one crate of minerals for thirty cedis
+akua bought one gallon of palm oil for twenty cedis
+esi bought one bottle of cooking oil for fifteen cedis
+mensah bought one box of milk for twenty four cedis
+owusu bought two tins of milo for twenty cedis
+afia bought one pack of diapers for ten cedis
+ekow bought one tube of toothpaste for three cedis
+kwesi bought one roll of toilet paper for two cedis
+efua bought one bar of key soap for two cedis
+kwabena bought two packets of candles for two cedis
+aba bought one box of matches for fifty pesewas
+yaa bought one pair of slippers for three cedis
+akua bought one bottle of Dettol for five cedis
+esi bought one pack of Maggi cubes for one cedi
+mensah bought one tin of sardines for three cedis
+owusu bought one bag of charcoal for ten cedis
+afia bought one pile of firewood for five cedis
+ekow bought one coconut for one cedi
+kwesi bought three oranges for two cedis
+efua bought one pineapple for three cedis
+kwabena bought five bananas for two cedis
+aba bought one bunch of plantain for five cedis
+yaa bought two tubers of yam for six cedis
+akua bought one bag of cassava for eight cedis
+esi bought one pack of indomie for two cedis
+mensah bought two bars of key soap for four cedis
+owusu bought one bottle of detergent for five cedis
+afia bought one umbrella for eight cedis
+ekow bought one pair of sandals for fifteen cedis
+kwesi bought one wristwatch for ten cedis
+efua bought one belt for five cedis
+kwabena bought one cap for three cedis
+aba bought one towel for eight cedis
+yaa bought one bedsheet for fifteen cedis
+akua bought one saucepan for ten cedis
+esi bought one extension board for ten cedis
+mensah bought one bulb for two cedis
+owusu bought one socket for two cedis
+how much is the rice
+how much is one bag of rice
+how much is a bottle of cooking oil
+how much is a crate of eggs
+how much is one carton of milk
+how much is a bag of sugar
+how much is a tin of milo
+how much is a bag of salt
+how much is a loaf of bread
+how much is a gallon of oil
+how much is a box of frozen chicken
+how much is a bag of gari
+how much is a bag of maize
+how much is a crate of minerals
+how much is a bag of cement
+how much is a gallon of palm oil
+how much is a carton of indomie
+how much is a pack of diapers
+how much is a tube of toothpaste
+how much is a bottle of Dettol
+how much is a roll of toilet paper
+how much is a pair of slippers
+how much is a pair of sandals
+how much is a bottle of mineral
+how much is a bottle of coca cola
+how much is a can of malt
+how much is a bottle of voltic water
+how much is a scratch card
+how much is a charger
+how much is a power bank
+how much is an earpiece
+how much is a bag of charcoal
+how much is a bunch of plantain
+how much is a tuber of yam
+how much is a bag of cassava
+how much is a pineapple
+how much is a watermelon
+how much is a pawpaw
+how much is a coconut
+how much is a dozen eggs
+how much is a box of matches
+how much is a bar of soap
+how much is a bottle of detergent
+how much is a packet of candles
+how much is a bottle of honey
+how much is a tin of sardines
+how much is a pack of biscuits
+how much is a fan ice
+how much is a sachet of water
+how much is a bottle of sobolo
+how much is a bottle of palm wine
+how much is a tin of Nescafe
+how much is a pack of tea bags
+what is the price of rice
+what is the price of cooking oil
+what is the price of eggs
+what is the price of sugar
+what is the price of milo
+what is the price of bread
+what is the price of milk
+what is the price of salt
+what is the price of frozen chicken
+what is the price of indomie
+what is the price of gari
+what is the price of maize
+what is the price of cement
+what is the price of palm oil
+what is the price of charcoal
+what is the price of firewood
+what is the price of plantain
+what is the price of yam
+what is the price of fish
+what is the price of tomatoes
+what is the price of onions
+what is the price of pepper
+what is the price of ginger
+what is the price of garlic
+what is the price of oranges
+what is the price of bananas
+what is the price of a crate of minerals
+what is the price of a carton of indomie
+what is the price of a box of matches
+what is the price of a bar of soap
+what is the price of a tube of toothpaste
+what is the price of a bottle of Dettol
+what is the price of a pair of slippers
+what is the price of a wristwatch
+what is the price of a belt
+what is the price of a towel
+what is the price of a bedsheet
+what is the price of a saucepan
+what is the price of a charger
+what is the price of a power bank
+ama paid five cedis
+kofi paid ten cedis for the buckets
+adwoa paid her debt of fifteen cedis
+kwame paid half of what he owes
+akosua paid three cedis out of ten
+yaw settled his account today
+esi paid for the rice in full
+mensah paid twenty cedis on his balance
+owusu paid fifty cedis for the oil
+afia paid one hundred cedis for the eggs
+ekow cleared his debt of twelve cedis
+kwesi paid five cedis remaining
+efua paid everything she owes
+kwabena paid the full amount
+aba paid two cedis short
+yaa paid exact amount
+akua paid with mobile money
+ama paid through momo
+kofi paid by cash
+adwoa paid three cedis and owes two
+kwame paid five cedis balance is ten
+akosua paid half now will pay half later
+yaw paid one cedi fifty out of three
+esi still owes me ten cedis
+mensah owes twenty five cedis from last week
+owusu has not paid for the chicken yet
+afia still owes eight cedis
+ekow owes fifteen cedis for the indomie
+kwesi owes me forty cedis
+efua has an outstanding balance of twelve cedis
+kwabena has not settled his account
+aba owes three cedis for the matches
+yaa owes one hundred cedis for the rice
+akua owes fifty cedis for the oil
+ama owes me money from last month
+kofi still owes for the phone charging
+adwoa owes two cedis for typing
+kwame owes five cedis for photocopy
+akosua has a balance of three cedis
+yaw owes one cedi for lamination
+today i made fifty cedis
+today i made one hundred cedis
+today i made two hundred cedis
+today i made seventy five cedis
+today i made one hundred and fifty cedis
+today i made thirty cedis
+today i made forty five cedis
+today i made eighty cedis
+today i made one hundred and twenty cedis
+today i made sixty cedis
+today i made two hundred and fifty cedis
+today i made three hundred cedis
+today i made fifteen cedis
+today i made twenty five cedis
+today i made ninety cedis
+today i made one hundred and ten cedis
+today i made one hundred and eighty cedis
+today i made two hundred and twenty cedis
+today i made three hundred and fifty cedis
+today i made five hundred cedis
+my total sales today is fifty cedis
+my total sales today is one hundred cedis
+my total sales today is two hundred cedis
+my total sales today is seventy five cedis
+my total sales today is one hundred and fifty cedis
+my total sales today is thirty cedis
+my total sales today is eighty cedis
+my total sales today is one hundred and twenty cedis
+my total sales today is sixty cedis
+my total sales today is ninety cedis
+my total sales today is one hundred and eighty cedis
+my total sales today is two hundred and fifty cedis
+my total sales today is three hundred cedis
+my total sales today is five hundred cedis
+my total sales today is one thousand cedis
+my total sales for today is four hundred cedis
+my total sales for today is six hundred cedis
+my total sales for today is seven hundred cedis
+my total sales for today is eight hundred cedis
+my total sales for today is nine hundred cedis
+my profit today is twenty cedis
+my profit today is thirty cedis
+my profit today is fifty cedis
+my profit today is forty cedis
+my profit today is ten cedis
+my profit today is fifteen cedis
+my profit today is twenty five cedis
+my profit today is one hundred cedis
+my profit today is seventy five cedis
+my profit today is sixty cedis
+my profit today is eighty cedis
+my profit today is one hundred and fifty cedis
+my profit today is two hundred cedis
+i made fifteen cedis profit today
+i made twenty cedis profit today
+i made thirty cedis profit today
+i made fifty cedis profit today
+i made ten cedis profit today
+i made forty cedis profit today
+i made twenty five cedis profit today
+i made one hundred cedis profit today
+i made seventy five cedis profit today
+i made sixty cedis profit today
+i made eighty cedis profit today
+i made one hundred and fifty cedis profit today
+i made two hundred cedis profit today
+i spent thirty cedis on stock today
+i spent fifty cedis on stock today
+i spent one hundred cedis on stock today
+i spent seventy five cedis on stock today
+i spent forty cedis on stock today
+i spent sixty cedis on stock today
+i spent twenty cedis on stock today
+i spent fifteen cedis on stock today
+i spent one hundred and fifty cedis on stock today
+i spent two hundred cedis on stock today
+i spent five cedis on transport
+i spent ten cedis on transport
+i spent three cedis on transport
+i spent two cedis on transport
+i spent eight cedis on transport
+i spent seven cedis on transport
+i spent five cedis on airtime today
+i spent ten cedis on airtime today
+i spent three cedis on charging
+i spent two cedis on water
+i spent one cedi on a sachet of water
+i spent five cedis on food today
+i spent ten cedis on food today
+i spent three cedis on food today
+i spent two cedis on food today
+i bought stock from the wholesale today
+i bought stock from makola market
+i went to makola to restock today
+i went to the wholesale to restock
+i restocked polythene bags today
+i restocked water sachets today
+i restocked exercise books today
+i restocked pens today
+i restocked buckets today
+i restocked black bags today
+i restocked straws today
+i restocked rubber bands today
+i restocked nylon today
+i restocked sellotape today
+i restocked plastic cups today
+i restocked takeaway packs today
+i restocked milk today
+i restocked milo today
+i restocked sugar today
+i restocked rice today
+i restocked cooking oil today
+i restocked eggs today
+i restocked bread today
+i restocked soap today
+i restocked detergent today
+i restocked matches today
+i restocked candles today
+i restocked minerals today
+i restocked indomie today
+i restocked gari today
+i restocked maize today
+i restocked charcoal today
+i restocked frozen chicken today
+i restocked toiletries today
+i need to restock polythene bags
+i need to restock water sachets
+i need to restock exercise books
+i need to restock pens
+i need to restock buckets
+i need to restock straws
+i need to restock milk
+i need to restock milo
+i need to restock sugar
+i need to restock rice
+i need to restock cooking oil
+i need to restock eggs
+i need to restock bread
+i need to restock soap
+i need to restock matches
+i need to restock minerals
+i need to restock indomie
+i need to restock charcoal
+i have run out of polythene bags
+i have run out of water sachets
+i have run out of exercise books
+i have run out of pens
+i have run out of buckets
+i have run out of straws
+i have run out of rubber bands
+i have run out of nylon
+i have run out of sellotape
+i have run out of plastic cups
+i have run out of takeaway packs
+i have run out of black bags
+i have run out of milk
+i have run out of milo
+i have run out of sugar
+i have run out of rice
+i have run out of cooking oil
+i have run out of eggs
+i have run out of bread
+i have run out of soap
+i have run out of detergent
+i have run out of matches
+i have run out of candles
+i have run out of minerals
+i have run out of indomie
+i have run out of gari
+i have run out of maize
+i have run out of charcoal
+i have run out of stock
+stock is finished
+polythene bags are finished
+water sachets are finished
+exercise books are finished
+pens are finished
+buckets are finished
+straws are finished
+rubber bands are finished
+nylon is finished
+sellotape is finished
+plastic cups are finished
+takeaway packs are finished
+black bags are finished
+milk is finished
+milo is finished
+sugar is finished
+rice is finished
+cooking oil is finished
+eggs are finished
+bread is finished
+soap is finished
+detergent is finished
+matches are finished
+candles are finished
+minerals are finished
+indomie is finished
+gari is finished
+maize is finished
+charcoal is finished
+this morning i sold ten cedis worth of goods
+this morning i sold five cedis worth of goods
+this morning i sold twenty cedis worth of goods
+this morning i sold fifteen cedis worth of goods
+this afternoon i sold thirty cedis worth of goods
+this afternoon i sold forty cedis worth of goods
+this afternoon i sold twenty five cedis worth of goods
+this evening i sold ten cedis worth of goods
+this evening i sold fifteen cedis worth of goods
+this evening i sold five cedis worth of goods
+yesterday i made fifty cedis
+yesterday i made one hundred cedis
+yesterday i made seventy five cedis
+yesterday i made thirty cedis
+yesterday i made one hundred and fifty cedis
+yesterday i made two hundred cedis
+yesterday i made forty cedis
+yesterday i made sixty cedis
+yesterday i sold ten bags of rice
+yesterday i sold five crates of eggs
+yesterday i sold two gallons of oil
+yesterday i sold one box of frozen chicken
+yesterday i sold three cartons of indomie
+yesterday i sold two bags of sugar
+yesterday i sold one bag of gari
+yesterday i sold one crate of minerals
+yesterday i sold five loaves of bread
+yesterday i sold ten tins of milo
+last week i made three hundred cedis
+last week i made five hundred cedis
+last week i made two hundred cedis
+last week i made four hundred cedis
+last week i made one thousand cedis
+last week i made seven hundred and fifty cedis
+last week i made eight hundred cedis
+last week i made six hundred cedis
+last week i sold twenty bags of rice
+last week i sold ten crates of eggs
+last week i sold five gallons of oil
+last week i sold three boxes of frozen chicken
+last week i sold fifteen cartons of indomie
+this week i have made two hundred cedis
+this week i have made three hundred cedis
+this week i have made one hundred and fifty cedis
+this week i have made four hundred cedis
+this week i have made five hundred cedis
+this week i have made one thousand cedis
+this month i have made two thousand cedis
+this month i have made three thousand cedis
+this month i have made one thousand five hundred cedis
+this month i have made five hundred cedis
+this month i have made one thousand cedis
+this month i have made four thousand cedis
+can you reduce the price
+can you reduce it a bit
+that is too expensive
+give me a discount
+what is your last price
+can i get a discount
+reduce it for me
+add some for me
+let me take it on credit
+i will pay tomorrow
+i will pay next week
+i will pay at the end of the month
+can i pay in instalments
+can i pay half now and half later
+let me owe you
+i will come and pay later
+put it on my account
+add it to my bill
+i have money on my account
+deduct it from my balance
+how much do i owe you
+what is my balance
+how much is my debt
+what is my total debt
+how much have i paid so far
+how much is left to pay
+what did i buy on credit
+what did i buy last week
+what did i buy yesterday
+what did i buy today
+show me my purchases
+show me my account
+show me my balance
+show me my debts
+show me my payments
+what did i sell today
+what did i sell yesterday
+what did i sell last week
+what did i sell this month
+how much did i sell today
+how much did i sell yesterday
+how much did i sell last week
+how much did i sell this month
+how many items did i sell today
+how many items did i sell yesterday
+how many items did i sell this week
+i dash you one cedi
+i dash you two cedis
+i dash you fifty pesewas
+i gave ama a discount of one cedi
+i gave kofi a discount of two cedis
+i gave adwoa a discount of fifty pesewas
+i gave kwame a reduction of one cedi
+i reduced the price by two cedis for akosua
+i reduced the price by one cedi for yaw
+i gave esi a free sachet of water
+i gave mensah one extra pen
+i gave owusu two additional straws
+i added one free takeaway pack for afia
+i added two free straws for ekow
+ama came to buy rice this morning
+kofi came to buy oil this afternoon
+adwoa came to buy eggs this evening
+kwame came to buy sugar this morning
+akosua came to buy milo this afternoon
+yaw came to buy bread this evening
+esi came to buy soap this morning
+mensah came to buy matches this afternoon
+owusu came to buy charcoal this evening
+afia came to buy indomie this morning
+ekow came to buy gari this afternoon
+kwesi came to buy maize this evening
+efua came to buy frozen chicken this morning
+kwabena came to buy minerals this afternoon
+aba came to buy water this evening
+yaa came to buy milk this morning
+akua came to buy salt this afternoon
+ama returned the buckets she bought
+kofi returned the exercise books
+adwoa exchanged the plastic cups for straws
+kwame wanted to return the nylon
+akosua exchanged the pens for notebooks
+yaw returned two damaged items
+esi returned one expired tin
+mensah exchanged the wrong size slippers
+owusu returned the faulty charger
+afia exchanged the earpiece
+ekow returned the power bank
+kwesi wanted to exchange the sandals
+efua returned the bedsheet
+kwabena exchanged the towel
+aba returned the saucepan
+yaa exchanged the bulb
+akua returned the socket
+i sold goods worth five cedis
+i sold goods worth ten cedis
+i sold goods worth fifteen cedis
+i sold goods worth twenty cedis
+i sold goods worth twenty five cedis
+i sold goods worth thirty cedis
+i sold goods worth forty cedis
+i sold goods worth fifty cedis
+i sold goods worth sixty cedis
+i sold goods worth seventy five cedis
+i sold goods worth one hundred cedis
+i sold goods worth one hundred and fifty cedis
+i sold goods worth two hundred cedis
+i sold goods worth two hundred and fifty cedis
+i sold goods worth three hundred cedis
+i sold goods worth five hundred cedis
+i sold goods worth one thousand cedis
+ama bought goods worth twenty cedis
+kofi bought goods worth fifteen cedis
+adwoa bought goods worth thirty cedis
+kwame bought goods worth ten cedis
+akosua bought goods worth fifty cedis
+yaw bought goods worth forty cedis
+esi bought goods worth one hundred cedis
+mensah bought goods worth seventy five cedis
+owusu bought goods worth sixty cedis
+afia bought goods worth eighty cedis
+ekow bought goods worth twenty five cedis
+kwesi bought goods worth one hundred and fifty cedis
+efua bought goods worth two hundred cedis
+kwabena bought goods worth thirty five cedis
+aba bought goods worth forty five cedis
+yaa bought goods worth ninety cedis
+akua bought goods worth one hundred and twenty cedis
+my total expenses today are ten cedis
+my total expenses today are fifteen cedis
+my total expenses today are twenty cedis
+my total expenses today are twenty five cedis
+my total expenses today are thirty cedis
+my total expenses today are fifty cedis
+my total expenses today are forty cedis
+my total expenses today are five cedis
+my expenses today are transport and food
+my expenses today are stock and transport
+my expenses today are stock and airtime
+my expenses today are stock and food
+my expenses today are stock transport and food
+i paid five cedis for transport today
+i paid ten cedis for transport today
+i paid three cedis for transport today
+i paid two cedis for transport today
+i paid five cedis for airtime today
+i paid ten cedis for airtime today
+i paid three cedis for charging today
+i paid five cedis for food today
+i paid ten cedis for food today
+i paid three cedis for food today
+i received mobile money from ama
+i received mobile money from kofi
+i received mobile money from adwoa
+i received mobile money from kwame
+i received mobile money from akosua
+i received mobile money from yaw
+i received momo from esi
+i received momo from mensah
+i received momo from owusu
+i received momo from afia
+i received cash from ama
+i received cash from kofi
+i received cash from adwoa
+i received cash from kwame
+i received cash from akosua
+i received cash from yaw
+ama sent mobile money of five cedis
+kofi sent mobile money of ten cedis
+adwoa sent mobile money of fifteen cedis
+kwame sent mobile money of twenty cedis
+akosua sent mobile money of eight cedis
+yaw sent mobile money of three cedis
+esi sent momo of fifty cedis
+mensah sent momo of thirty cedis
+owusu sent momo of twenty five cedis
+afia sent momo of forty cedis
+i have one hundred cedis in my account
+i have two hundred cedis in my account
+i have fifty cedis in my account
+i have seventy five cedis in my account
+i have one hundred and fifty cedis in my account
+i have thirty cedis in my account
+i have forty cedis in my account
+i have sixty cedis in my account
+i have eighty cedis in my account
+i have two hundred and fifty cedis in my account
+i have three hundred cedis in my account
+i have five hundred cedis in my account
+i have one thousand cedis in my account
+my account balance is one hundred cedis
+my account balance is two hundred cedis
+my account balance is fifty cedis
+my account balance is seventy five cedis
+my account balance is one hundred and fifty cedis
+my account balance is thirty cedis
+my account balance is forty cedis
+my account balance is sixty cedis
+my account balance is eighty cedis
+my account balance is two hundred and fifty cedis
+my account balance is three hundred cedis
+my account balance is five hundred cedis
+my account balance is one thousand cedis
+my change is two cedis
+my change is one cedi
+my change is fifty pesewas
+my change is three cedis
+my change is five cedis
+your change is two cedis
+your change is one cedi
+your change is fifty pesewas
+your change is three cedis
+your change is five cedis
+keep the change
+keep the one cedi change
+no change
+exact amount
+i owe you five cedis
+i owe you ten cedis
+i owe you three cedis
+i owe you two cedis
+i owe you one cedi
+i owe you fifteen cedis
+i owe you twenty cedis
+i owe you fifty cedis
+i owe you one hundred cedis
+you owe me five cedis
+you owe me ten cedis
+you owe me three cedis
+you owe me two cedis
+you owe me one cedi
+you owe me fifteen cedis
+you owe me twenty cedis
+you owe me fifty cedis
+you owe me one hundred cedis
+how much is one dozen
+how much is two dozen
+how much is half a dozen
+how much is one box
+how much is one carton
+how much is one crate
+how much is one bag
+how much is one gallon
+how much is one tin
+how much is one sachet
+how much is one bottle
+how much is one pack
+how much is one roll
+how much is one pair
+how much is one set
+how much is one yard
+how much is one piece
+i sold one thousand cedis worth of goods today
+i sold two thousand cedis worth of goods today
+i sold five hundred cedis worth of goods today
+i sold one thousand five hundred cedis worth of goods today
+i sold seven hundred and fifty cedis worth of goods today
+i sold two thousand five hundred cedis worth of goods today
+my total for the month is five thousand cedis
+my total for the month is three thousand cedis
+my total for the month is ten thousand cedis
+my total for the month is two thousand cedis
+my total for the month is one thousand five hundred cedis
+my total for the month is seven thousand cedis
+my total for the month is eight thousand cedis
+my total for the month is twelve thousand cedis
+i made one thousand cedis profit this month
+i made two thousand cedis profit this month
+i made five hundred cedis profit this month
+i made one thousand five hundred cedis profit this month
+i made three thousand cedis profit this month
+i made two thousand five hundred cedis profit this month
+i bought stock worth one hundred cedis
+i bought stock worth two hundred cedis
+i bought stock worth three hundred cedis
+i bought stock worth five hundred cedis
+i bought stock worth one thousand cedis
+i bought stock worth one thousand five hundred cedis
+i bought stock worth two thousand cedis
+i bought stock worth seven hundred and fifty cedis

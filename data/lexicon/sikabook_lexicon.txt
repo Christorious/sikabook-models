@@ -40,3 +40,294 @@ yaw Y AO
 # --- Credit terms ---
 owing OW IH NG
 trust T R AH S T
+
+# --- Ghanaian names (Akan day names) ---
+esi EH S IY
+mensah M EH N S AH
+owusu OW W UW S UW
+afia AH F IY AH
+ekow EH K OW
+kwesi K W EH S IY
+efua EH F W AH
+kwabena K W AH B EH N AH
+aba AH B AH
+yaa Y AH
+akua AH K W AH
+abena AH B EH N AH
+
+# --- Ghanaian food & goods ---
+milo M AY L OW
+gari G AA R IY
+kenkey K EH NG K IY
+waakye W AA CH IY
+jollof J OW L AH F
+shito SH IY T OW
+cocoyam K OW K OW Y AE M
+indomie IH N D OW M IY
+sobolo S OW B OW L OW
+bissap B IH S AE P
+lamugin L AH M UW J IY N
+voltic V OW L T IH K
+nescafe N EH S K AE F EY
+maggi M AH G IY
+dettol D EH T AO L
+pomade P AH M EY D
+makola M AH K OW L AH
+
+# --- Telecom ---
+mtn EH M T IY EH N
+vodafone V OW D AH F OW N
+momo M OW M OW
+airtime EH R T AY M
+scratch S K R AE CH
+
+# --- Items likely missing from base model ---
+charcoal CH AA R K OW L
+firewood F AY R W UH D
+sachet S AE SH EY
+sachets S AE SH EY T S
+groundnut G R AW N D N AH T
+pawpaw P AO P AO
+plantain P L AE N T EY N
+cassava K AH S AA V AH
+maize M EY Z
+yam Y AE M
+mineral M IH N AH R AH L
+minerals M IH N AH R AH L Z
+milk M IH L K
+flour F L AW R
+sardines S AA R D IY N Z
+Dettol D EH T AO L
+cedis S IY D IY S
+cedi S IY D IY
+pesewas P AH S EY W AH Z
+pesewa P AH S EY W AH
+detergent D IH T ER J AH N T
+sponge S P AH N J
+sponges S P AH N J IH Z
+earpiece IH R P IY S
+earring IH R IH NG
+wristwatch R IH S T W AA CH
+sandals S AE N D AH L Z
+slippers S L IH P ER Z
+singlet S IH NG L AH T
+boxer B AA K S ER
+pillowcase P IH L OW K EY S
+bedsheet B EH D SH IY T
+colander K AH L AH N D ER
+ladle L EY D AH L
+saucepan S AO S P AE N
+flask F L AE S K
+kettle K EH T AH L
+blender B L EH N D ER
+umbrella AH M B R EH L AH
+torch T AO R CH
+extension IH K S T EH N SH AH N
+bulb B AH L B
+socket S AA K AH T
+switch S W IH CH
+cooker K UH K ER
+crate K R EY T
+crates K R EY T S
+carton K AA R T AH N
+cartons K AA R T AH N Z
+gallon G AE L AH N
+gallons G AE L AH N Z
+loaf L OW F
+loaves L OW V Z
+tuber T UW B ER
+tubers T UW B ER Z
+bunch B AH N CH
+piece P IY S
+pieces P IY S IH Z
+yard Y AA R D
+yards Y AA R D Z
+pair P EH R
+pairs P EH R Z
+instalments IH N S T AO L M AH N T S
+account AH K AW N T
+balance B AE L AH N S
+debt D EH T
+debts D EH T S
+profit P R AA F IH T
+expenses IH K S P EH N S IH Z
+outstanding AW T S T AE N D IH NG
+discount D IH S K AW N T
+photocopy F OW T OW K AA P IY
+laminated L AE M IH N EY T IH D
+lamination L AE M IH N EY SH AH N
+typing T AY P IH NG
+restock R IY S T AA K
+restocked R IY S T AA K T
+wholesale HH OW L S EY L
+tomato T AH M EY T OW
+tomatoes T AH M EY T OW Z
+onion AH N Y AH N
+onions AH N Y AH N Z
+pepper P EH P ER
+ginger J IH NG J ER
+garlic G AA R L IH K
+coconut K OW K AH N AH T
+pineapple P AY N AE P AH L
+watermelon W AO T ER M EH L AH N
+avocado AE V AH K AA D OW
+banana B AH N AE N AH
+bananas B AH N AE N AH Z
+orange AO R IH N J
+oranges AO R IH N J IH Z
+sugar SH UH G ER
+salt S AO L T
+oil OY L
+honey HH AH N IY
+biscuits B IH S K IH T S
+chocolate CH AO K L AH T
+cream K R IY M
+curry K ER IY
+soy S OY
+cubes K Y UW B Z
+paste P EY S T
+powder P AW D ER
+tea T IY
+wine W AY N
+wool W UH L
+toilet T OY L IH T
+diapers D AY P ER Z
+sanitary S AE N IH T EH R IY
+cotton K AA T AH N
+toothbrush T UW TH B R AH SH
+toothpaste T UW TH P EY S T
+matches M AE CH IH Z
+candles K AE N D AH L Z
+batteries B AE T ER IY Z
+cloth K L AO TH
+weave W IY V
+wig W IH G
+necklace N EH K L AH S
+ring R IH NG
+belt B EH L T
+cap K AE P
+socks S AA K S
+towel T AW AH L
+curtain K ER T AH N
+carpet K AA R P AH T
+bowl B OW L
+spoon S P UW N
+knife N AY F
+cooler K UW L ER
+iron AY ER N
+board B AO R D
+matches M AE CH IH Z
+palm P AA M
+smoked S M OW K T
+dried D R AY D
+fresh F R EH SH
+frozen F R OW Z AH N
+charcoal CH AA R K OW L
+malt M AO L T
+fanta F AE N T AH
+sprite S P R AY T
+cola K OW L AH
+coca K OW K AH
+indomie IH N D OW M IY
+exactly IH G Z AE K T L IY
+exact IH G Z AE K T
+expensive IH K S P EH N S IH V
+reduce R IH D UW S
+reduced R IH D UW S T
+reduction R IH D AH K SH AH N
+discount D IH S K AW N T
+owe OW
+owes OW Z
+settled S EH T AH L D
+cleared K L IH R D
+received R IH S IY V D
+sent S EH N T
+cash K AE SH
+mobile M OW B AY L
+balance B AE L AH N S
+purchases P ER CH AH S IH Z
+payments P EY M AH N T S
+worth W ER TH
+transport T R AE N S P AO R T
+airtime EH R T AY M
+dash D AE SH
+keep K IY P
+let L EH T
+put P UH T
+add AE D
+added AE D IH D
+additional AH D IH SH AH N AH L
+extra EH K S T R AH
+free F R IY
+full F UH L
+half HH AE F
+exact IH G Z AE K T
+amount AH M AW N T
+total T OW T AH L
+remaining R IH M EY N IH NG
+left L EH F T
+short SH AO R T
+damaged D AE M IH J D
+expired IH K S P AY R D
+faulty F AO L T IY
+wrong R AO NG
+size S AY Z
+exchanged IH K S CH EY N J D
+exchange IH K S CH EY N J
+return R IH T ER N
+returned R IH T ER N D
+wanted W AA N T IH D
+came K EY M
+went W EH N T
+yet Y EH T
+still S T IH L
+now N AW
+later L EY T ER
+tomorrow T AH M AO R OW
+yesterday Y EH S T ER D EY
+morning M AO R N IH NG
+afternoon AE F T ER N UW N
+evening IY V N IH NG
+today T AH D EY
+week W IY K
+month M AH N TH
+year Y IY R
+last L AE S T
+next N EH K S T
+this DH IH S
+that DH AE T
+some S AH M
+many M EH N IY
+how HH AW
+what W AH T
+which W IH CH
+can K AE N
+will W IH L
+need N IY D
+have HH AE V
+has HH AE Z
+was W AH Z
+did D IH D
+do D UW
+buy B AY
+bought B AO T
+sold S OW L D
+sell S EH L
+make M EY K
+made M EY D
+spend S P EH N D
+spent S P EH N T
+take T EY K
+took T UH K
+give G IH V
+gave G EY V
+get G EH T
+show SH OW
+deduct D IH D AH K T
+charge CH AA R J
+charged CH AA R J D
+print P R IH N T
+printed P R IH N T IH D
+copy K AA P IY
+type T AY P
+wash W AA SH

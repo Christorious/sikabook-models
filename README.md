@@ -41,7 +41,7 @@ See [docs/TIER1-SETUP.md](docs/TIER1-SETUP.md) for detailed instructions.
 sikabook-models/
 ├── data/
 │   ├── corpus/
-│   │   └── trading_corpus.txt       # ~300 trader sentences (SikaBook vocabulary)
+│   │   └── trading_corpus.txt       # ~1,200 trader sentences (SikaBook vocabulary)
 │   └── lexicon/
 │       └── sikabook_lexicon.txt     # Phonetic dictionary (starter)
 ├── scripts/
