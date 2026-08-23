@@ -1,0 +1,422 @@
+i sold polythene bags
+i sold two polythene bags
+i sold two polythene bags at two cedis each
+i sold three takeaway packs at one cedi each
+i sold five rubber bands at fifty pesewas each
+i sold one dozen black bags at three cedis per pack
+i sold four water sachets at one cedi each
+i sold ten plastic cups at two cedis each
+i sold two bottles of water at one cedi fifty
+i sold one exercise book at five cedis
+i sold three pens at one cedi each
+i sold two nylon rolls at two cedis each
+i sold one sellotape at one cedi
+i sold five straws at twenty pesewas each
+i sold six buckets at ten cedis each
+i sold three lemons at fifty pesewas each
+i sold two tomatoes at one cedi
+i sold four onions at two cedis
+i sold twenty notebooks at two cedis each
+i sold ten exercise books at three cedis each
+i sold two dozen polythene bags at five cedis per pack
+i sold one box of pens at fifteen cedis
+i sold five packs of straws at two cedis each
+i sold three rolls of nylon at four cedis each
+i sold some plastic cups to ama at two cedis each
+i sold water sachets to kofi at one cedi each
+i sold takeaway packs to adwoa at one cedi fifty each
+i sold black bags to kwame at three cedis per pack
+i sold exercise books to akosua at three cedis each
+i sold pens to yaw at one cedi each
+i sold rubber bands to abena at fifty pesewas each
+i sold buckets to kojo at ten cedis each
+i sold polythene bags to ama on credit
+i sold two takeaway packs to kofi on credit
+i sold five water sachets to adwoa on trust
+i sold three exercise books to kwame on credit
+i sold ten pens to akosua on credit at one cedi each
+i sold some buckets to yaw on credit at ten cedis each
+i sold polythene bags to ama on credit for two cedis each
+i sold five plastic cups to kofi owing
+i sold two dozen black bags to adwoa not paid
+i sold three notebooks to kwame will pay later
+i sold some rubber bands to akosua no money
+i sold ten straws to yaw on credit at twenty pesewas each
+i sold takeaway packs to ama on credit total of fifteen cedis
+i sold water sachets to kofi on trust total of ten cedis
+i sold four polythene bags to adwoa on credit at two cedis each
+i sold one bucket to kwame on credit at ten cedis
+i sold twenty pens to akosua on credit at one cedi each
+i sold three exercise books to yaw on trust at three cedis each
+i sold two lemons to ama for one cedi
+i sold five tomatoes to kofi for five cedis
+i sold some onions to adwoa for two cedis
+i sold one dozen water sachets to kwame for twelve cedis
+i sold three packs of plastic cups to akosua for nine cedis
+i sold two boxes of exercise books to yaw for twenty cedis
+i sold ten bottles to ama at one cedi each total of ten cedis
+i sold five nylon rolls to kofi at two cedis each total of ten cedis
+i sold one sellotape to adwoa for one cedi
+i sold three straws to kwame at twenty pesewas each
+i sold two buckets to akosua at ten cedis each total of twenty cedis
+i sold some polythene bags to yaw at two cedis each
+i sold five takeaway packs to ama at one cedi fifty each
+i sold ten water sachets to kofi at one cedi each on credit
+i sold three exercise books to adwoa at three cedis each on trust
+i sold two pens to kwame at one cedi each not paid
+i sold one dozen pens to akosua for twelve cedis on credit
+i sold four lemons to yaw at fifty pesewas each
+i sold some plastic cups to ama on credit at two cedis each
+i sold two dozen buckets to kofi at ten cedis each total of two hundred and forty cedis
+i sold five tomato to adwoa at one cedi each
+i sold three onion to kwame at fifty pesewas each
+i sold some black bags to akosua at three cedis per pack
+i sold two boxes of straws to yaw at five cedis each
+i sold one pack of rubber bands to ama for one cedi
+i sold ten sachet water to kofi at one cedi each
+i sold five packs of takeaway packs to adwoa at two cedis each
+i sold two rolls of sellotape to kwame at one cedi each
+i sold one dozen exercise books to akosua for fifteen cedis
+i sold three bottles of water to yaw at one cedi fifty each
+i sold some nylon to ama at two cedis per roll
+i sold four packs of pens to kofi at two cedis each
+i sold two dozen plastic cups to adwoa at two cedis each
+i sold five buckets to kwame at ten cedis each on credit
+i sold one box of notebooks to akosua for twenty cedis
+i sold some water sachets to yaw at one cedi each
+i sold three polythene bags to ama at two cedis each
+i sold ten takeaway packs to kofi at one cedi each on credit
+i sold five rubber bands to adwoa at fifty pesewas each on trust
+i sold two black bags to kwame at three cedis per pack owing
+i sold one exercise book to akosua at five cedis on credit
+i sold some pens to yaw at one cedi each not paid
+i sold four straws to ama at twenty pesewas each
+i sold two dozen water sachets to kofi at one cedi each
+i sold three packs of buckets to adwoa at ten cedis each
+i sold one roll of nylon to kwame for two cedis
+i sold five sellotape to akosua at one cedi each
+i sold some lemons to yaw at fifty pesewas each
+i sold two boxes of plastic cups to ama at ten cedis each
+i sold ten notebooks to kofi at two cedis each on credit
+i sold one dozen polythene bags to adwoa at two cedis each on trust
+i sold three takeaway packs to kwame at one cedi fifty each
+i sold five exercise books to akosua at three cedis each not paid
+i sold two pens to yaw at one cedi each owing
+i sold some buckets to ama at ten cedis each on credit
+i sold four water sachets to kofi at one cedi each
+i sold one box of black bags to adwoa for fifteen cedis
+i sold three rolls of rubber bands to kwame at one cedi each
+i sold two dozen straws to akosua at twenty pesewas each
+i sold five bottles to yaw at one cedi fifty each
+i sold some plastic cups to ama at two cedis each on trust
+i sold ten polythene bags to kofi at two cedis each
+i sold one pack of takeaway packs to adwoa for two cedis
+i sold three nylon to kwame at two cedis each
+i sold two boxes of water sachets to akosua at twelve cedis each
+i sold five pens to yaw at one cedi each on credit
+i sold some exercise books to ama at three cedis each not paid
+i sold four buckets to kofi at ten cedis each owing
+i sold one dozen notebooks to adwoa at two cedis each
+i sold three sellotape to kwame at one cedi each
+i sold two packs of lemons to akosua at one cedi each
+i sold five tomato to yaw at one cedi each
+i sold some onions to ama at fifty pesewas each
+i sold ten straws to kofi at twenty pesewas each on credit
+i sold one box of plastic cups to adwoa for ten cedis
+i sold three dozen polythene bags to kwame at two cedis each
+i sold two takeaway packs to akosua at one cedi fifty each on trust
+i sold five water sachets to yaw at one cedi each not paid
+i sold some exercise books to ama at three cedis each on credit
+i sold four pens to kofi at one cedi each
+i sold one dozen buckets to adwoa at ten cedis each
+i sold three packs of rubber bands to kwame at one cedi each
+i sold two boxes of straws to akosua at five cedis each
+i sold five notebooks to yaw at two cedis each on credit
+i sold some black bags to ama at three cedis per pack on trust
+i sold ten plastic cups to kofi at two cedis each
+i sold one roll of nylon to adwoa for two cedis
+i sold three sellotape to kwame at one cedi each
+i sold two dozen water sachets to akosua at one cedi each
+i sold five takeaway packs to yaw at one cedi each on credit
+i sold some polythene bags to ama at two cedis each not paid
+i sold four exercise books to kofi at three cedis each
+i sold one box of pens to adwoa for fifteen cedis
+i sold three packs of buckets to kwame at ten cedis each
+i sold two rolls of rubber bands to akosua at one cedi each
+i sold five straws to yaw at twenty pesewas each on trust
+i sold some bottles to ama at one cedi fifty each
+i sold ten plastic cups to kofi at two cedis each on credit
+i sold one dozen exercise books to adwoa at three cedis each
+i sold three polythene bags to kwame at two cedis each
+i sold two packs of black bags to akosua at three cedis each
+i sold five takeaway packs to yaw at one cedi each
+i sold some water sachets to ama at one cedi each on credit
+i sold four pens to kofi at one cedi each not paid
+i sold one box of notebooks to adwoa for twenty cedis
+i sold three dozen straws to kwame at twenty pesewas each
+i sold two buckets to akosua at ten cedis each owing
+i sold five rubber bands to yaw at fifty pesewas each
+i sold some nylon to ama at two cedis per roll
+i sold ten sellotape to kofi at one cedi each on credit
+i sold one pack of lemons to adwoa for one cedi
+i sold three tomato to kwame at one cedi each
+i sold two boxes of onions to akosua at two cedis each
+i sold five water sachets to yaw at one cedi each on trust
+i sold some plastic cups to ama at two cedis each
+i sold four polythene bags to kofi at two cedis each on credit
+i sold one dozen takeaway packs to adwoa at one cedi fifty each
+i sold three exercise books to kwame at three cedis each
+i sold two packs of pens to akosua at two cedis each
+i sold five buckets to yaw at ten cedis each not paid
+i sold some notebooks to ama at two cedis each on credit
+i sold ten black bags to kofi at three cedis per pack
+i sold one roll of nylon to adwoa for two cedis
+i sold three packs of straws to kwame at two cedis each
+i sold two boxes of rubber bands to akosua at one cedi each
+i sold five bottles to yaw at one cedi fifty each
+i sold some water sachets to ama at one cedi each on trust
+i sold four plastic cups to kofi at two cedis each
+i sold one dozen pens to adwoa at one cedi each
+i sold three takeaway packs to kwame at one cedi fifty each on credit
+i sold two exercise books to akosua at three cedis each
+i sold five polythene bags to yaw at two cedis each
+i sold some buckets to ama at ten cedis each not paid
+i sold ten straws to kofi at twenty pesewas each
+i sold one pack of sellotape to adwoa for one cedi
+i sold three dozen water sachets to kwame at one cedi each
+i sold two packs of lemons to akosua at one cedi each
+i sold five notebooks to yaw at two cedis each on credit
+i sold some rubber bands to ama at fifty pesewas each
+i sold four nylon to kofi at two cedis each
+i sold one box of buckets to adwoa for twenty cedis
+i sold three packs of black bags to kwame at three cedis each
+i sold two rolls of pens to akosua at one cedi each
+i sold five plastic cups to yaw at two cedis each on trust
+i sold some takeaway packs to ama at one cedi fifty each
+i sold ten exercise books to kofi at three cedis each on credit
+i sold one dozen polythene bags to adwoa at two cedis each
+i sold three water sachets to kwame at one cedi each
+i sold two packs of straws to akosua at two cedis each
+i sold five pens to yaw at one cedi each
+i sold some buckets to ama at ten cedis each on credit
+i sold four rubber bands to kofi at fifty pesewas each
+i sold one box of notebooks to adwoa for twenty cedis
+i sold three packs of plastic cups to kwame at two cedis each
+i sold two dozen black bags to akosua at three cedis per pack
+i sold five sellotape to yaw at one cedi each
+i sold some straws to ama at twenty pesewas each
+i sold ten lemons to kofi at fifty pesewas each on credit
+i sold one pack of onions to adwoa for two cedis
+i sold three tomato to kwame at one cedi each
+i sold two boxes of water sachets to akosua at twelve cedis each
+i sold five buckets to yaw at ten cedis each not paid
+i sold some polythene bags to ama at two cedis each on trust
+i sold four takeaway packs to kofi at one cedi fifty each
+i sold one dozen exercise books to adwoa at three cedis each
+i sold three pens to kwame at one cedi each
+i sold two packs of nylon to akosua at two cedis each
+i sold five plastic cups to yaw at two cedis each
+i sold some water sachets to ama at one cedi each on credit
+i sold four black bags to kofi at three cedis per pack
+i sold one box of straws to adwoa for five cedis
+i sold three packs of rubber bands to kwame at one cedi each
+i sold two rolls of sellotape to akosua at one cedi each
+i sold five notebooks to yaw at two cedis each
+i sold some buckets to ama at ten cedis each not paid
+i sold ten polythene bags to kofi at two cedis each on credit
+i sold one pack of takeaway packs to adwoa for two cedis
+i sold three dozen water sachets to kwame at one cedi each
+i sold two packs of pens to akosua at two cedis each
+i sold five exercise books to yaw at three cedis each on trust
+i sold some plastic cups to ama at two cedis each
+i sold four straws to kofi at twenty pesewas each
+i sold one box of lemons to adwoa for five cedis
+i sold three packs of buckets to kwame at ten cedis each
+i sold two rolls of nylon to akosua at two cedis each
+i sold five black bags to yaw at three cedis per pack
+i sold some rubber bands to ama at fifty pesewas each on credit
+i sold ten notebooks to kofi at two cedis each
+i sold one dozen pens to adwoa at one cedi each
+i sold three water sachets to kwame at one cedi each on trust
+i sold two packs of plastic cups to akosua at two cedis each
+i sold five takeaway packs to yaw at one cedi fifty each
+i sold some polythene bags to ama at two cedis each not paid
+i sold four buckets to kofi at ten cedis each
+i sold one box of exercise books to adwoa for twenty cedis
+i sold three packs of straws to kwame at two cedis each
+i sold two rolls of rubber bands to akosua at one cedi each
+i sold five sellotape to yaw at one cedi each on credit
+i sold some nylon to ama at two cedis per roll
+i sold ten buckets to kofi at ten cedis each
+i sold one pack of black bags to adwoa for three cedis
+i sold three dozen water sachets to kwame at one cedi each
+i sold two packs of lemons to akosua at one cedi each
+i sold five pens to yaw at one cedi each on trust
+i sold some plastic cups to ama at two cedis each
+i sold four straws to kofi at twenty pesewas each
+i sold one box of notebooks to adwoa for twenty cedis
+i sold three packs of buckets to kwame at ten cedis each
+i sold two rolls of nylon to akosua at two cedis each
+i sold five black bags to yaw at three cedis per pack
+i sold some rubber bands to ama at fifty pesewas each on credit
+i sold ten notebooks to kofi at two cedis each
+i sold one dozen pens to adwoa at one cedi each
+i sold three water sachets to kwame at one cedi each on trust
+i sold two packs of plastic cups to akosua at two cedis each
+i sold five takeaway packs to yaw at one cedi fifty each
+i sold some polythene bags to ama at two cedis each not paid
+i sold four buckets to kofi at ten cedis each
+i sold one box of exercise books to adwoa for twenty cedis
+i sold three packs of straws to kwame at two cedis each
+i sold two rolls of rubber bands to akosua at one cedi each
+i sold five sellotape to yaw at one cedi each on credit
+i sold some nylon to ama at two cedis per roll
+i sold ten buckets to kofi at ten cedis each
+i sold one pack of black bags to adwoa for three cedis
+i sold three dozen water sachets to kwame at one cedi each
+i sold two packs of lemons to akosua at one cedi each
+i sold five pens to yaw at one cedi each on trust
+ama bought five polythene bags for ten cedis
+kofi bought three takeaway packs for four cedis fifty
+adwoa bought ten water sachets for ten cedis on credit
+kwame bought two buckets for twenty cedis
+akosua bought five exercise books for fifteen cedis on credit
+yaw bought one dozen pens for twelve cedis
+ama took three plastic cups on credit
+kofi took two packs of straws on trust
+adwoa took five rubber bands owing
+kwame took one box of notebooks not paid
+akosua collected ten pens on credit at one cedi each
+yaw collected three buckets on credit at ten cedis each
+ama bought four black bags for twelve cedis on credit
+kofi bought two dozen polythene bags for ten cedis
+adwoa bought five water sachets for five cedis on trust
+kwame bought three exercise books for nine cedis
+akosua bought ten straws for two cedis on credit
+yaw bought one pack of rubber bands for one cedi
+ama bought two nylon rolls for four cedis
+kofi bought three sellotape for three cedis
+adwoa bought one box of pens for fifteen cedis on credit
+kwame bought five plastic cups for ten cedis
+akosua bought two buckets for twenty cedis on credit
+yaw bought ten notebooks for twenty cedis
+ama bought three tomato for three cedis
+kofi bought five onions for two cedis fifty
+adwoa bought two lemons for one cedi on credit
+kwame bought one dozen water sachets for twelve cedis
+akosua bought four takeaway packs for six cedis
+yaw bought two packs of black bags for six cedis
+ama bought five exercise books for fifteen cedis
+kofi bought three pens for three cedis on credit
+adwoa bought one box of plastic cups for ten cedis
+kwame bought two rolls of nylon for four cedis
+akosua bought five straws for one cedi on trust
+yaw bought ten rubber bands for fifty pesewas
+ama bought four polythene bags for eight cedis on credit
+kofi bought one dozen buckets for ten cedis
+adwoa bought three packs of pens for six cedis
+kwame bought two boxes of exercise books for forty cedis
+akosua bought five water sachets for five cedis on credit
+yaw bought three buckets for thirty cedis
+ama bought ten plastic cups for twenty cedis
+kofi bought two takeaway packs for three cedis on credit
+adwoa bought one pack of straws for two cedis
+kwame bought five notebooks for ten cedis on trust
+akosua bought three pens for three cedis
+yaw bought one roll of nylon for two cedis
+ama bought four black bags for twelve cedis
+kofi bought two dozen water sachets for twenty four cedis on credit
+adwoa bought five rubber bands for fifty pesewas
+kwame bought one box of buckets for twenty cedis
+akosua bought three packs of polythene bags for six cedis
+yaw bought two sellotape for two cedis
+ama bought five pens for five cedis on credit
+kofi bought ten exercise books for thirty cedis
+adwoa bought one dozen plastic cups for twelve cedis on trust
+kwame bought three buckets for thirty cedis not paid
+akosua bought five straws for one cedi
+yaw bought two packs of notebooks for four cedis
+ama bought four water sachets for four cedis
+kofi bought one box of black bags for fifteen cedis on credit
+adwoa bought three packs of rubber bands for three cedis
+kwame bought two rolls of sellotape for two cedis
+akosua bought five polythene bags for ten cedis
+yaw bought one dozen takeaway packs for eighteen cedis
+ama bought three exercise books for nine cedis on credit
+kofi bought ten pens for ten cedis
+adwoa bought two packs of plastic cups for four cedis
+kwame bought five buckets for fifty cedis on trust
+akosua bought one roll of nylon for two cedis
+yaw bought three packs of straws for six cedis
+ama bought four notebooks for eight cedis
+kofi bought two boxes of water sachets for twenty four cedis on credit
+adwoa bought five pens for five cedis
+kwame bought one dozen rubber bands for fifty pesewas
+akosua bought three lemons for one cedi fifty
+yaw bought two tomato for two cedis
+ama bought five onions for two cedis fifty on credit
+kofi bought one pack of polythene bags for two cedis
+adwoa bought three dozen water sachets for thirty six cedis
+kwame bought two packs of takeaway packs for four cedis
+akosua bought five exercise books for fifteen cedis on trust
+yaw bought one box of pens for fifteen cedis not paid
+ama bought three plastic cups for six cedis
+kofi bought two buckets for twenty cedis on credit
+adwoa bought one pack of straws for two cedis
+kwame bought five black bags for fifteen cedis
+akosua bought three rolls of nylon for six cedis
+yaw bought ten notebooks for twenty cedis
+ama bought four rubber bands for fifty pesewas
+kofi bought one dozen plastic cups for twelve cedis on credit
+adwoa bought two packs of pens for four cedis
+kwame bought five water sachets for five cedis
+akosua bought three sellotape for three cedis on trust
+yaw bought one box of buckets for twenty cedis
+ama bought two dozen polythene bags for ten cedis
+kofi bought five straws for one cedi
+adwoa bought three packs of exercise books for nine cedis
+kwame bought one roll of rubber bands for one cedi
+akosua bought two boxes of notebooks for forty cedis on credit
+yaw bought five buckets for fifty cedis
+ama bought ten water sachets for ten cedis
+kofi bought one pack of black bags for three cedis
+adwoa bought three dozen pens for thirty six cedis
+kwame bought two packs of plastic cups for four cedis on trust
+akosua bought five takeaway packs for seven cedis fifty
+yaw bought one roll of nylon for two cedis not paid
+ama bought four straws for fifty pesewas
+kofi bought two boxes of rubber bands for two cedis
+adwoa bought five polythene bags for ten cedis on credit
+kwame bought one dozen water sachets for twelve cedis
+akosua bought three packs of buckets for thirty cedis
+yaw bought two sellotape for two cedis
+ama bought five pens for five cedis
+kofi bought ten exercise books for thirty cedis on credit
+adwoa bought one pack of notebooks for two cedis
+kwame bought three buckets for thirty cedis
+akosua bought two dozen plastic cups for twenty four cedis on trust
+yaw bought five straws for one cedi
+ama bought four water sachets for four cedis
+kofi bought one box of polythene bags for ten cedis
+adwoa bought three packs of black bags for nine cedis
+kwame bought two rolls of sellotape for two cedis
+akosua bought five rubber bands for fifty pesewas on credit
+yaw bought one dozen notebooks for twenty four cedis
+ama bought three pens for three cedis
+kofi bought two packs of takeaway packs for four cedis on trust
+adwoa bought five exercise books for fifteen cedis
+kwame bought one box of straws for five cedis
+akosua bought three packs of pens for six cedis not paid
+yaw bought two buckets for twenty cedis
+ama bought one roll of nylon for two cedis
+kofi bought five water sachets for five cedis on credit
+adwoa bought three packs of plastic cups for six cedis
+kwame bought two dozen black bags for twelve cedis
+akosua bought one box of buckets for twenty cedis on trust
+yaw bought five pens for five cedis
+ama bought ten polythene bags for twenty cedis
+kofi bought one pack of rubber bands for one cedi
+adwoa bought three dozen straws for one cedi fifty
+kwame bought two packs of exercise books for six cedis
+akosua bought five notebooks for ten cedis on credit
+yaw bought one roll of sellotape for one cedi

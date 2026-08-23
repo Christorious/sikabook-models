@@ -1,0 +1,42 @@
+# SikaBook Phonetic Lexicon (Starter)
+# Format: <word> <phoneme1> <phoneme2> ...
+# Phonemes use the CMU/ARPABET set (same as the base English Vosk model).
+#
+# This starter lexicon covers the trading vocabulary. For Ghanaian
+# language models (Twi, Ewe, Ga, Dagbani), a language-specific lexicon
+# must be built — see docs/TIER3-GHANAIAN-LANGUAGES.md.
+#
+# Only add words here that are MISSING from the base model's words.txt.
+# The build script merges this with the existing lexicon.
+
+# --- Goods (singular / plural) ---
+polythene P AO L IY TH IY N
+polythene P OW L IY TH IY N
+sachet S AE SH EY
+sachets S AE SH EY T S
+takeaway T EY K AH W EY
+nylon N AY L AA N
+sellotape S EH L AH T EY P
+straws S T R AO Z
+buckets B AH K AH T S
+buckets B AH K IY T S
+notebooks N OW T B UH K S
+
+# --- Currency ---
+cedis S IY D IY S
+cedi S IY D IY
+pesewas P AH S EY W AH Z
+pesewa P AH S EY W AH
+
+# --- Ghanaian names ---
+ama AA M AH
+adwoa AA D W AH
+akosua AA K OW S W AH
+kofi K OW F IY
+kwame K W AA M IY
+kojo K OW D Y OW
+yaw Y AO
+
+# --- Credit terms ---
+owing OW IH NG
+trust T R AH S T

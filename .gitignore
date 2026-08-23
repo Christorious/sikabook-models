@@ -1,0 +1,26 @@
+# Compiled Kaldi (large, not tracked)
+kaldi/
+
+# Downloaded base models
+models/vosk-model-*/
+
+# Built/adapted models (large binaries — release on HuggingFace instead)
+models/sikabook-*/
+models/*.tar.gz
+
+# Generated corpus (output of clean_corpus.py)
+data/corpus/*.clean.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
