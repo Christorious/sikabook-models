@@ -1,0 +1,11 @@
+repo,artifact,path,notes,license_status,link
+GhanaNLP/ghanaian-nlp-datasets-models,datasets,/,curated datasets for Ghanaian languages,UNKNOWN,https://github.com/GhanaNLP/ghanaian-nlp-datasets-models
+GhanaNLP/ghana-corpus-builder,scripts,ghana_corpus.py,corpus builder & preprocessing,UNKNOWN,https://github.com/GhanaNLP/ghana-corpus-builder
+GhanaNLP/ABENA,training-recipes,/,BERT/DistilBERT/RoBERTa training scripts,UNKNOWN,https://github.com/GhanaNLP/ABENA
+GhanaNLP/GhanaNouns,lexicon,data/,noun lexicon (data),CHECK LICENSE,https://github.com/GhanaNLP/GhanaNouns
+nyarderr/okyeame-tts,tts,/,TTS demo & data formatting,UNKNOWN,https://github.com/nyarderr/okyeame-tts
+iamEtornam/GhanaNLP-Dart,api-client,/,Dart client for GhanaNLP API,APACHE-2.0,https://github.com/iamEtornam/GhanaNLP-Dart
+JosephAppiah-c/Ghanaian-cultural-lexicon,lexicon,/,cultural lexicon for Ghana,UNKNOWN,https://github.com/JosephAppiah-c/Ghanaian-cultural-lexicon
+Ahmed01ttfret/Ghana-Pigin,app,/,Ghanaian Pidgin dictionary app,UNKNOWN,https://github.com/Ahmed01ttfret/Ghana-Pigin
+Christorious/sikabook-models,corpus,data/corpus/trading_corpus.txt,Trading-domain Pidgin/English corpus,APACHE-2.0,https://github.com/Christorious/sikabook-models/blob/main/data/corpus/trading_corpus.txt
+Christorious/sikabook-models,lexicon,data/lexicon/sikabook_lexicon.txt,SikaBook lexicon,APACHE-2.0,https://github.com/Christorious/sikabook-models/blob/main/data/lexicon/sikabook_lexicon.txt
