@@ -59,41 +59,54 @@ echo "Copying base model to $OUTPUT_DIR..."
 rm -rf "$OUTPUT_DIR"
 cp -r "$PROJECT_ROOT/models/$BASE_MODEL_NAME" "$OUTPUT_DIR"
 
-# --- Step 2: Locate Kaldi tools ---
+# --- Step 2: Locate OpenFST/OpenGrM tools ---
 echo ""
 echo "=========================================="
-echo " Step 2: Locate Kaldi/OpenFST tools"
+echo " Step 2: Locate OpenFST/OpenGrM tools"
 echo "=========================================="
 
-# Try common Kaldi locations
-KALDI_ROOT=""
+# Try local install first (built without Kaldi), then Kaldi locations
+OPENFST_BIN=""
 for candidate in \
-    "$PROJECT_ROOT/kaldi" \
-    "$HOME/kaldi" \
-    "/opt/kaldi" \
-    "/usr/local/kaldi"; do
-    if [ -d "$candidate/tools/openfst/bin" ]; then
-        KALDI_ROOT="$candidate"
+    "$HOME/local/bin" \
+    "$PROJECT_ROOT/kaldi/tools/openfst/bin" \
+    "$HOME/kaldi/tools/openfst/bin" \
+    "/opt/kaldi/tools/openfst/bin" \
+    "/usr/local/kaldi/tools/openfst/bin"; do
+    if [ -x "$candidate/fstsymbols" ]; then
+        OPENFST_BIN="$candidate"
         break
     fi
 done
 
-if [ -z "$KALDI_ROOT" ]; then
-    echo "ERROR: Kaldi not found."
+if [ -z "$OPENFST_BIN" ]; then
+    echo "ERROR: OpenFST/OpenGrM tools not found."
     echo ""
-    echo "Please install Kaldi first. Quick install:"
-    echo "  git clone https://github.com/kaldi-asr/kaldi.git $PROJECT_ROOT/kaldi"
-    echo "  cd $PROJECT_ROOT/kaldi/tools && make"
-    echo "  extras/install_opengrm.sh"
+    echo "Please install OpenFST + OpenGrM first. Quick install (no sudo):"
+    echo "  mkdir -p ~/local/src && cd ~/local/src"
+    echo "  wget https://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.8.2.tar.gz"
+    echo "  tar xzf openfst-1.8.2.tar.gz && cd openfst-1.8.2"
+    echo "  ./configure --enable-grm --prefix=\$HOME/local && make -j4 && make install"
+    echo "  cd .. && wget https://www.opengrm.org/twiki/pub/GRM/NGramDownload/ngram-1.3.15.tar.gz"
+    echo "  tar xzf ngram-1.3.15.tar.gz && cd ngram-1.3.15"
+    echo "  CXXFLAGS=\"-I\$HOME/local/include\" LDFLAGS=\"-L\$HOME/local/lib\" \\"
+    echo "    ./configure --prefix=\$HOME/local && make -j4 && make install"
     echo ""
     echo "Then re-run this script."
     exit 1
 fi
 
-export PATH="$KALDI_ROOT/tools/openfst/bin:$PATH"
-export LD_LIBRARY_PATH="$KALDI_ROOT/tools/openfst/lib/fst:${LD_LIBRARY_PATH:-}"
+OPENFST_PREFIX="$(dirname "$OPENFST_BIN")"
+export PATH="$OPENFST_BIN:$PATH"
+export LD_LIBRARY_PATH="$OPENFST_PREFIX/lib:$OPENFST_PREFIX/lib/fst:${LD_LIBRARY_PATH:-}"
 
-echo "Using Kaldi at: $KALDI_ROOT"
+# Preload the ngram FST extension so OpenFST tools can read/write ngram FST type
+NGRAM_FST_SO="$OPENFST_PREFIX/lib/fst/ngram-fst.so"
+if [ -f "$NGRAM_FST_SO" ]; then
+    export LD_PRELOAD="$NGRAM_FST_SO:${LD_PRELOAD:-}"
+fi
+
+echo "Using OpenFST/OpenGrM at: $OPENFST_BIN"
 
 # --- Step 3: Build the language model ---
 echo ""
@@ -102,12 +115,18 @@ echo " Step 3: Build language model (Gr.fst)"
 echo "=========================================="
 
 MODEL_DIR="$OUTPUT_DIR"
-WORDS_FILE="$MODEL_DIR/words.txt"
-OLD_GR="$MODEL_DIR/Gr.fst"
+WORDS_FILE="$MODEL_DIR/graph/words.txt"
+OLD_GR="$MODEL_DIR/graph/Gr.fst"
 TEXT_FILE="$CORPUS_CLEAN"
 
+# Some Vosk models put Gr.fst in the root, others in graph/
 if [ ! -f "$OLD_GR" ]; then
-    echo "ERROR: Gr.fst not found in $MODEL_DIR"
+    OLD_GR="$MODEL_DIR/Gr.fst"
+    WORDS_FILE="$MODEL_DIR/words.txt"
+fi
+
+if [ ! -f "$OLD_GR" ]; then
+    echo "ERROR: Gr.fst not found in $MODEL_DIR or $MODEL_DIR/graph/"
     exit 1
 fi
 
@@ -117,6 +136,47 @@ echo "  Corpus: $TEXT_FILE"
 # Extract symbol table from existing model
 fstsymbols --save_osymbols="$WORDS_FILE" "$OLD_GR" > /dev/null
 
+# Directory where Gr.fst lives (graph/ for newer Vosk models)
+GR_DIR="$(dirname "$OLD_GR")"
+
+# Add new vocabulary words from corpus to the symbol table
+# The base model doesn't know words like "cedis", "pesewas", "sachet"
+python3 - "$WORDS_FILE" "$TEXT_FILE" <<'PYEOF'
+import sys, re
+
+words_file = sys.argv[1]
+corpus_file = sys.argv[2]
+
+# Read existing symbol table (format: word integer_id)
+existing = {}
+max_id = 0
+with open(words_file, 'r', encoding='utf-8') as f:
+    for line in f:
+        parts = line.strip().split()
+        if len(parts) == 2:
+            word, wid = parts[0], int(parts[1])
+            existing[word] = wid
+            if wid > max_id:
+                max_id = wid
+
+# Extract unique words from corpus
+corpus_words = set()
+with open(corpus_file, 'r', encoding='utf-8') as f:
+    for line in f:
+        corpus_words.update(line.strip().split())
+
+# Find new words not in symbol table
+new_words = sorted(w for w in corpus_words if w not in existing)
+if new_words:
+    with open(words_file, 'a', encoding='utf-8') as f:
+        for w in new_words:
+            max_id += 1
+            f.write(f"{w} {max_id}\n")
+    print(f"  Added {len(new_words)} new words to vocabulary: {', '.join(new_words[:10])}{'...' if len(new_words) > 10 else ''}")
+else:
+    print("  All corpus words already in vocabulary")
+PYEOF
+
 # Compile corpus into FST archives, count n-grams, and build new grammar
 farcompilestrings \
     --fst_type=compact \
@@ -124,11 +184,10 @@ farcompilestrings \
     --keep_symbols \
     "$TEXT_FILE" | \
 ngramcount | \
-ngrammake | \
-fstconvert --fst_type=ngram > "$MODEL_DIR/Gr.new.fst"
+ngrammake > "$GR_DIR/Gr.new.fst"
 
 # Replace the old grammar
-mv "$MODEL_DIR/Gr.new.fst" "$MODEL_DIR/Gr.fst"
+mv "$GR_DIR/Gr.new.fst" "$OLD_GR"
 
 echo ""
 echo "=========================================="
