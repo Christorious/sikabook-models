@@ -10,8 +10,21 @@ models/*.tar.gz
 
 # Generated corpus (output of clean_corpus.py)
 data/corpus/*.clean.txt
+data/corpus/*.vocabfiltered.txt
+
+# Release bundles (output of export/package_android.sh)
+bundles/
+
+# Dataset downloads (huge, re-downloadable)
+data/datasets/ashesi/raw/
+data/datasets/ashesi/prepared/
+
+# NLU training artifacts
+nlu/bert/export/ckpt/
+nlu/bert/export/onnx/
 
 # Python
+.venv/
 __pycache__/
 *.pyc
 *.pyo

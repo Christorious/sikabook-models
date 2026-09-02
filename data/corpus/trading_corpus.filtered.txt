@@ -1,0 +1,320 @@
+i sold polythene bags
+i sold two polythene bags
+i sold polythene bags to ama on credit
+i sold two takeaway packs to kofi on credit
+i sold three exercise books to kwame on credit
+i sold five plastic cups to kofi owing
+i sold three notebooks to kwame will pay later
+ama took three plastic cups on credit
+kofi took two packs of straws on trust
+kwame took one box of notebooks not paid
+how much is the rice
+how much is one bag of rice
+how much is a bottle of cooking oil
+how much is a crate of eggs
+how much is one carton of milk
+how much is a bag of sugar
+how much is a tin of milo
+how much is a bag of salt
+how much is a loaf of bread
+how much is a gallon of oil
+how much is a box of frozen chicken
+how much is a bag of gari
+how much is a bag of maize
+how much is a crate of minerals
+how much is a bag of cement
+how much is a gallon of palm oil
+how much is a pack of diapers
+how much is a tube of toothpaste
+how much is a roll of toilet paper
+how much is a pair of slippers
+how much is a pair of sandals
+how much is a bottle of mineral
+how much is a bottle of coca cola
+how much is a can of malt
+how much is a scratch card
+how much is a charger
+how much is a power bank
+how much is an earpiece
+how much is a bag of charcoal
+how much is a bunch of plantain
+how much is a tuber of yam
+how much is a bag of cassava
+how much is a pineapple
+how much is a watermelon
+how much is a coconut
+how much is a dozen eggs
+how much is a box of matches
+how much is a bar of soap
+how much is a bottle of detergent
+how much is a packet of candles
+how much is a bottle of honey
+how much is a tin of sardines
+how much is a pack of biscuits
+how much is a fan ice
+how much is a sachet of water
+how much is a bottle of palm wine
+how much is a tin of nescafe
+how much is a pack of tea bags
+what is the price of rice
+what is the price of cooking oil
+what is the price of eggs
+what is the price of sugar
+what is the price of milo
+what is the price of bread
+what is the price of milk
+what is the price of salt
+what is the price of frozen chicken
+what is the price of gari
+what is the price of maize
+what is the price of cement
+what is the price of palm oil
+what is the price of charcoal
+what is the price of firewood
+what is the price of plantain
+what is the price of yam
+what is the price of fish
+what is the price of tomatoes
+what is the price of onions
+what is the price of pepper
+what is the price of ginger
+what is the price of garlic
+what is the price of oranges
+what is the price of bananas
+what is the price of a crate of minerals
+what is the price of a box of matches
+what is the price of a bar of soap
+what is the price of a tube of toothpaste
+what is the price of a pair of slippers
+what is the price of a wristwatch
+what is the price of a belt
+what is the price of a towel
+what is the price of a bedsheet
+what is the price of a saucepan
+what is the price of a charger
+what is the price of a power bank
+kwame paid half of what he owes
+yaw settled his account today
+esi paid for the rice in full
+ama paid through momo
+kofi paid by cash
+owusu has not paid for the chicken yet
+ama owes me money from last month
+kofi still owes for the phone charging
+i bought stock from the wholesale today
+i bought stock from makola market
+i went to makola to restock today
+i went to the wholesale to restock
+i restocked polythene bags today
+i restocked water sachets today
+i restocked exercise books today
+i restocked pens today
+i restocked buckets today
+i restocked black bags today
+i restocked straws today
+i restocked rubber bands today
+i restocked nylon today
+i restocked plastic cups today
+i restocked takeaway packs today
+i restocked milk today
+i restocked milo today
+i restocked sugar today
+i restocked rice today
+i restocked cooking oil today
+i restocked eggs today
+i restocked bread today
+i restocked soap today
+i restocked detergent today
+i restocked matches today
+i restocked candles today
+i restocked minerals today
+i restocked gari today
+i restocked maize today
+i restocked charcoal today
+i restocked frozen chicken today
+i restocked toiletries today
+i need to restock polythene bags
+i need to restock water sachets
+i need to restock exercise books
+i need to restock pens
+i need to restock buckets
+i need to restock straws
+i need to restock milk
+i need to restock milo
+i need to restock sugar
+i need to restock rice
+i need to restock cooking oil
+i need to restock eggs
+i need to restock bread
+i need to restock soap
+i need to restock matches
+i need to restock minerals
+i need to restock charcoal
+i have run out of polythene bags
+i have run out of water sachets
+i have run out of exercise books
+i have run out of pens
+i have run out of buckets
+i have run out of straws
+i have run out of rubber bands
+i have run out of nylon
+i have run out of plastic cups
+i have run out of takeaway packs
+i have run out of black bags
+i have run out of milk
+i have run out of milo
+i have run out of sugar
+i have run out of rice
+i have run out of cooking oil
+i have run out of eggs
+i have run out of bread
+i have run out of soap
+i have run out of detergent
+i have run out of matches
+i have run out of candles
+i have run out of minerals
+i have run out of gari
+i have run out of maize
+i have run out of charcoal
+i have run out of stock
+stock is finished
+polythene bags are finished
+water sachets are finished
+exercise books are finished
+pens are finished
+buckets are finished
+straws are finished
+rubber bands are finished
+nylon is finished
+plastic cups are finished
+takeaway packs are finished
+black bags are finished
+milk is finished
+milo is finished
+sugar is finished
+rice is finished
+cooking oil is finished
+eggs are finished
+bread is finished
+soap is finished
+detergent is finished
+matches are finished
+candles are finished
+minerals are finished
+gari is finished
+maize is finished
+charcoal is finished
+yesterday i sold ten bags of rice
+yesterday i sold five crates of eggs
+yesterday i sold two gallons of oil
+yesterday i sold one box of frozen chicken
+yesterday i sold two bags of sugar
+yesterday i sold one bag of gari
+yesterday i sold one crate of minerals
+yesterday i sold five loaves of bread
+yesterday i sold ten tins of milo
+last week i sold twenty bags of rice
+last week i sold ten crates of eggs
+last week i sold five gallons of oil
+last week i sold three boxes of frozen chicken
+can you reduce the price
+can you reduce it a bit
+that is too expensive
+give me a discount
+what is your last price
+can i get a discount
+reduce it for me
+add some for me
+let me take it on credit
+i will pay tomorrow
+i will pay next week
+i will pay at the end of the month
+can i pay in instalments
+can i pay half now and half later
+let me owe you
+i will come and pay later
+put it on my account
+add it to my bill
+i have money on my account
+deduct it from my balance
+how much do i owe you
+what is my balance
+how much is my debt
+what is my total debt
+how much have i paid so far
+how much is left to pay
+what did i buy on credit
+what did i buy last week
+what did i buy yesterday
+what did i buy today
+show me my purchases
+show me my account
+show me my balance
+show me my debts
+show me my payments
+what did i sell today
+what did i sell yesterday
+what did i sell last week
+what did i sell this month
+how much did i sell today
+how much did i sell yesterday
+how much did i sell last week
+how much did i sell this month
+how many items did i sell today
+how many items did i sell yesterday
+how many items did i sell this week
+i gave esi a free sachet of water
+i gave mensah one extra pen
+i gave owusu two additional straws
+ama came to buy rice this morning
+kofi came to buy oil this afternoon
+kwame came to buy sugar this morning
+yaw came to buy bread this evening
+esi came to buy soap this morning
+mensah came to buy matches this afternoon
+owusu came to buy charcoal this evening
+aba came to buy water this evening
+ama returned the buckets she bought
+kofi returned the exercise books
+kwame wanted to return the nylon
+yaw returned two damaged items
+esi returned one expired tin
+mensah exchanged the wrong size slippers
+owusu returned the faulty charger
+aba returned the saucepan
+my expenses today are transport and food
+my expenses today are stock and transport
+my expenses today are stock and airtime
+my expenses today are stock and food
+my expenses today are stock transport and food
+i received mobile money from ama
+i received mobile money from kofi
+i received mobile money from kwame
+i received mobile money from yaw
+i received momo from esi
+i received momo from mensah
+i received momo from owusu
+i received cash from ama
+i received cash from kofi
+i received cash from kwame
+i received cash from yaw
+keep the change
+no change
+exact amount
+how much is one dozen
+how much is two dozen
+how much is half a dozen
+how much is one box
+how much is one carton
+how much is one crate
+how much is one bag
+how much is one gallon
+how much is one tin
+how much is one sachet
+how much is one bottle
+how much is one pack
+how much is one roll
+how much is one pair
+how much is one set
+how much is one yard
+how much is one piece
