@@ -108,6 +108,25 @@ fi
 
 echo "Using OpenFST/OpenGrM at: $OPENFST_BIN"
 
+# --- Step 2b: materialize base-model vocabulary ---
+# The shipped model has no words.txt; fstsymbols regenerates it from the
+# base grammar's symbol table. Needed by filter_corpus_to_vocab.py.
+BASE_WORDS="$PROJECT_ROOT/models/$BASE_MODEL_NAME/graph/words.txt"
+BASE_GR="$PROJECT_ROOT/models/$BASE_MODEL_NAME/graph/Gr.fst"
+if [ ! -f "$BASE_WORDS" ] && [ -f "$BASE_GR" ]; then
+    echo "Generating base-model words.txt from Gr.fst symbol table..."
+    fstsymbols --save_osymbols="$BASE_WORDS" "$BASE_GR" > /dev/null
+fi
+
+# --- Step 2c: filter to recognizable vocabulary ---
+# Words without pronunciations in HCLr.fst can never be recognized by the
+# decoder; keeping their sentences in the grammar only dilutes LM mass.
+echo ""
+echo "=========================================="
+echo " Step 2c: Filtering corpus to recognizable vocabulary"
+echo "=========================================="
+python3 "$SCRIPT_DIR/filter_corpus_to_vocab.py" || true
+
 # --- Step 3: Build the language model ---
 echo ""
 echo "=========================================="
@@ -117,7 +136,13 @@ echo "=========================================="
 MODEL_DIR="$OUTPUT_DIR"
 WORDS_FILE="$MODEL_DIR/graph/words.txt"
 OLD_GR="$MODEL_DIR/graph/Gr.fst"
-TEXT_FILE="$CORPUS_CLEAN"
+# Prefer the vocabulary-filtered corpus when present (see
+# filter_corpus_to_vocab.py): grammar mass goes only to recognizable words.
+if [ -f "$PROJECT_ROOT/data/corpus/trading_corpus.vocabfiltered.txt" ]; then
+    TEXT_FILE="$PROJECT_ROOT/data/corpus/trading_corpus.vocabfiltered.txt"
+else
+    TEXT_FILE="$CORPUS_CLEAN"
+fi
 
 # Some Vosk models put Gr.fst in the root, others in graph/
 if [ ! -f "$OLD_GR" ]; then

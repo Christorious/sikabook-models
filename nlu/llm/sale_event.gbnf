@@ -1,0 +1,37 @@
+# SaleEvent JSON grammar for llama.cpp (GBNF)
+# Enforces schema-valid output from Qwen3-0.6B/1.7B quantized —
+# grammar-constrained decoding is mandatory at this model size.
+# Used with: llama-cli --grammar-file sale_event.gbnf
+# Fields the LLM may fill: amount, product, quantity, unit, unit_price.
+# is_sale/confidence stay with the rules+BERT stages.
+
+root ::= "{" ws "\"schema_version\"" ws ":" ws "1" ws "," ws
+  "\"is_sale\"" ws ":" ws boolean ws "," ws
+  "\"amount\"" ws ":" ws number-or-null ws "," ws
+  "\"currency\"" ws ":" ws "\"GHS\"" ws "," ws
+  "\"product\"" ws ":" ws string-or-null ws "," ws
+  "\"product_surface\"" ws ":" ws string-or-null ws "," ws
+  "\"quantity\"" ws ":" ws integer-or-null ws "," ws
+  "\"unit\"" ws ":" ws unit-or-null ws "," ws
+  "\"unit_price\"" ws ":" ws number-or-null ws
+"}"
+
+boolean ::= "true" | "false"
+
+number-or-null ::= number | "null"
+integer-or-null ::= integer | "null"
+string-or-null ::= string | "null"
+unit-or-null ::= unit | "null"
+
+number ::= integer ("." integer)? 
+integer ::= ([0-9]) | [1-9] [0-9]*
+
+unit ::= "\"piece\"" | "\"bowl\"" | "\"bucket\"" | "\"tin\"" | "\"can\""
+       | "\"size\"" | "\"pack\"" | "\"bag\"" | "\"sachet\"" | "\"dozen\""
+       | "\"crate\"" | "\"gallon\"" | "\"bunch\"" | "\"tuber\"" | "\"plate\""
+       | "\"cup\"" | "\"packet\"" | "\"bottle\"" | "\"carton\"" | "\"roll\""
+       | "\"olonka\""
+
+string ::= "\"" ( [^"\\\x7F\x00-\x1F] | "\\" (["\\bfnrt] | "u" [0-9a-fA-F]{4}) )* "\""
+
+ws ::= | " " | "\n" | "\t" | ws ws

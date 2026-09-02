@@ -1,0 +1,664 @@
+{
+  "schema_version": 1,
+  "products": [
+    {
+      "canonical": "Tilapia",
+      "category": "fish",
+      "variants": [
+        "Tilapia",
+        "tilapia",
+        "apateshi",
+        "tuo"
+      ],
+      "min_price": 12.0,
+      "max_price": 25.0,
+      "units": [
+        "piece",
+        "bowl"
+      ],
+      "source": "ghana-voice-ledger seed"
+    },
+    {
+      "canonical": "Mackerel",
+      "category": "fish",
+      "variants": [
+        "Mackerel",
+        "mackerel",
+        "kpanla",
+        "titus"
+      ],
+      "min_price": 8.0,
+      "max_price": 18.0,
+      "units": [
+        "piece",
+        "tin"
+      ],
+      "source": "ghana-voice-ledger seed"
+    },
+    {
+      "canonical": "Sardines",
+      "category": "fish",
+      "variants": [
+        "Sardines",
+        "sardines",
+        "herring",
+        "sardin"
+      ],
+      "min_price": 5.0,
+      "max_price": 12.0,
+      "units": [
+        "tin",
+        "piece"
+      ],
+      "source": "ghana-voice-ledger seed"
+    },
+    {
+      "canonical": "Tuna",
+      "category": "fish",
+      "variants": [
+        "Tuna",
+        "tuna",
+        "light meat",
+        "chunk light"
+      ],
+      "min_price": 15.0,
+      "max_price": 30.0,
+      "units": [
+        "tin",
+        "piece"
+      ],
+      "source": "ghana-voice-ledger seed"
+    },
+    {
+      "canonical": "Red Fish",
+      "category": "fish",
+      "variants": [
+        "Red Fish",
+        "red fish",
+        "red snapper",
+        "adwene"
+      ],
+      "min_price": 20.0,
+      "max_price": 45.0,
+      "units": [
+        "piece",
+        "size"
+      ],
+      "source": "ghana-voice-ledger seed"
+    },
+    {
+      "canonical": "Salmon",
+      "category": "fish",
+      "variants": [
+        "Salmon",
+        "salmon",
+        "pink salmon"
+      ],
+      "min_price": 25.0,
+      "max_price": 50.0,
+      "units": [
+        "piece",
+        "tin"
+      ],
+      "source": "ghana-voice-ledger seed"
+    },
+    {
+      "canonical": "Catfish",
+      "category": "fish",
+      "variants": [
+        "Catfish",
+        "catfish",
+        "mudfish",
+        "sumbre"
+      ],
+      "min_price": 18.0,
+      "max_price": 35.0,
+      "units": [
+        "piece",
+        "size"
+      ],
+      "source": "ghana-voice-ledger seed"
+    },
+    {
+      "canonical": "Croaker",
+      "category": "fish",
+      "variants": [
+        "Croaker",
+        "croaker",
+        "komi",
+        "yellow croaker"
+      ],
+      "min_price": 10.0,
+      "max_price": 22.0,
+      "units": [
+        "piece",
+        "size"
+      ],
+      "source": "ghana-voice-ledger seed"
+    },
+    {
+      "canonical": "Polythene Bags",
+      "category": "household",
+      "variants": [
+        "Polythene Bags",
+        "polythene bags",
+        "polythene",
+        "black bags",
+        "rubber bags",
+        "bags"
+      ],
+      "min_price": 1.0,
+      "max_price": 20.0,
+      "units": [
+        "piece",
+        "pack"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Sachet Water",
+      "category": "beverages",
+      "variants": [
+        "Sachet Water",
+        "sachet water",
+        "water sachets",
+        "pure water",
+        "voltic"
+      ],
+      "min_price": 0.5,
+      "max_price": 15.0,
+      "units": [
+        "sachet",
+        "bag",
+        "pack"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Takeaway Packs",
+      "category": "household",
+      "variants": [
+        "Takeaway Packs",
+        "takeaway packs",
+        "take away",
+        "food packs"
+      ],
+      "min_price": 0.5,
+      "max_price": 10.0,
+      "units": [
+        "piece",
+        "pack"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Plastic Cups",
+      "category": "household",
+      "variants": [
+        "Plastic Cups",
+        "plastic cups",
+        "cups"
+      ],
+      "min_price": 0.5,
+      "max_price": 10.0,
+      "units": [
+        "piece",
+        "pack"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Kenkey",
+      "category": "food",
+      "variants": [
+        "Kenkey",
+        "kenkey",
+        "komi"
+      ],
+      "min_price": 1.0,
+      "max_price": 15.0,
+      "units": [
+        "piece"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Waakye",
+      "category": "food",
+      "variants": [
+        "Waakye",
+        "waakye"
+      ],
+      "min_price": 2.0,
+      "max_price": 30.0,
+      "units": [
+        "pack",
+        "plate"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Jollof",
+      "category": "food",
+      "variants": [
+        "Jollof",
+        "jollof",
+        "jollof rice"
+      ],
+      "min_price": 5.0,
+      "max_price": 40.0,
+      "units": [
+        "pack",
+        "plate"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Rice",
+      "category": "food",
+      "variants": [
+        "Rice",
+        "rice"
+      ],
+      "min_price": 5.0,
+      "max_price": 100.0,
+      "units": [
+        "olonka",
+        "bag",
+        "cup"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Gari",
+      "category": "food",
+      "variants": [
+        "Gari",
+        "gari",
+        "garri"
+      ],
+      "min_price": 2.0,
+      "max_price": 50.0,
+      "units": [
+        "olonka",
+        "cup",
+        "bag"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Beans",
+      "category": "food",
+      "variants": [
+        "Beans",
+        "beans",
+        "gobe"
+      ],
+      "min_price": 3.0,
+      "max_price": 50.0,
+      "units": [
+        "olonka",
+        "cup"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Groundnuts",
+      "category": "food",
+      "variants": [
+        "Groundnuts",
+        "groundnuts",
+        "nkatie",
+        "peanuts"
+      ],
+      "min_price": 0.5,
+      "max_price": 20.0,
+      "units": [
+        "cup",
+        "packet",
+        "bag"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Tomatoes",
+      "category": "produce",
+      "variants": [
+        "Tomatoes",
+        "tomatoes",
+        "tomato"
+      ],
+      "min_price": 0.5,
+      "max_price": 50.0,
+      "units": [
+        "piece",
+        "bowl",
+        "crate"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Pepper",
+      "category": "produce",
+      "variants": [
+        "Pepper",
+        "pepper",
+        "shito",
+        "fresh pepper"
+      ],
+      "min_price": 0.5,
+      "max_price": 20.0,
+      "units": [
+        "bowl",
+        "olonka",
+        "sachet"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Onions",
+      "category": "produce",
+      "variants": [
+        "Onions",
+        "onions",
+        "onion",
+        "awule"
+      ],
+      "min_price": 0.5,
+      "max_price": 50.0,
+      "units": [
+        "piece",
+        "bowl",
+        "bag"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Garden Eggs",
+      "category": "produce",
+      "variants": [
+        "Garden Eggs",
+        "garden eggs",
+        "ntrowa"
+      ],
+      "min_price": 0.5,
+      "max_price": 20.0,
+      "units": [
+        "bowl",
+        "piece"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Indomie",
+      "category": "food",
+      "variants": [
+        "Indomie",
+        "indomie",
+        "noodles"
+      ],
+      "min_price": 1.0,
+      "max_price": 20.0,
+      "units": [
+        "piece",
+        "pack",
+        "carton"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Eggs",
+      "category": "produce",
+      "variants": [
+        "Eggs",
+        "eggs",
+        "egg"
+      ],
+      "min_price": 1.0,
+      "max_price": 40.0,
+      "units": [
+        "piece",
+        "crate"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Milk",
+      "category": "beverages",
+      "variants": [
+        "Milk",
+        "milk",
+        "ideal milk",
+        "carnation"
+      ],
+      "min_price": 2.0,
+      "max_price": 30.0,
+      "units": [
+        "tin",
+        "can"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Milo",
+      "category": "beverages",
+      "variants": [
+        "Milo",
+        "milo",
+        "bournvita"
+      ],
+      "min_price": 5.0,
+      "max_price": 60.0,
+      "units": [
+        "tin",
+        "sachet",
+        "pack"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Sugar",
+      "category": "food",
+      "variants": [
+        "Sugar",
+        "sugar"
+      ],
+      "min_price": 2.0,
+      "max_price": 50.0,
+      "units": [
+        "olonka",
+        "packet",
+        "sachet"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Cooking Oil",
+      "category": "food",
+      "variants": [
+        "Cooking Oil",
+        "cooking oil",
+        "frytol",
+        "oil",
+        "gari oil"
+      ],
+      "min_price": 5.0,
+      "max_price": 120.0,
+      "units": [
+        "gallon",
+        "bottle",
+        "sachet"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Soap",
+      "category": "household",
+      "variants": [
+        "Soap",
+        "soap",
+        "key soap",
+        "dettol"
+      ],
+      "min_price": 1.0,
+      "max_price": 30.0,
+      "units": [
+        "piece",
+        "pack"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Pomade",
+      "category": "household",
+      "variants": [
+        "Pomade",
+        "pomade",
+        "cream"
+      ],
+      "min_price": 1.0,
+      "max_price": 40.0,
+      "units": [
+        "piece",
+        "tin"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Bissap",
+      "category": "beverages",
+      "variants": [
+        "Bissap",
+        "bissap",
+        "sobolo",
+        "lamugin"
+      ],
+      "min_price": 0.5,
+      "max_price": 20.0,
+      "units": [
+        "sachet",
+        "bottle",
+        "cup"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Cocoyam",
+      "category": "produce",
+      "variants": [
+        "Cocoyam",
+        "cocoyam",
+        "kooko",
+        "mantesi"
+      ],
+      "min_price": 2.0,
+      "max_price": 60.0,
+      "units": [
+        "bowl",
+        "olonka",
+        "bag"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Plantain",
+      "category": "produce",
+      "variants": [
+        "Plantain",
+        "plantain",
+        "borɔdeɛ",
+        "borode"
+      ],
+      "min_price": 1.0,
+      "max_price": 80.0,
+      "units": [
+        "bunch",
+        "piece",
+        "bowl"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Cassava",
+      "category": "produce",
+      "variants": [
+        "Cassava",
+        "cassava",
+        "bankye"
+      ],
+      "min_price": 1.0,
+      "max_price": 60.0,
+      "units": [
+        "bowl",
+        "olonka",
+        "bag"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Yam",
+      "category": "produce",
+      "variants": [
+        "Yam",
+        "yam",
+        "amba"
+      ],
+      "min_price": 2.0,
+      "max_price": 100.0,
+      "units": [
+        "tuber",
+        "piece",
+        "bowl"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Pawpaw",
+      "category": "produce",
+      "variants": [
+        "Pawpaw",
+        "pawpaw",
+        "paw paw"
+      ],
+      "min_price": 1.0,
+      "max_price": 20.0,
+      "units": [
+        "piece"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Charcoal",
+      "category": "household",
+      "variants": [
+        "Charcoal",
+        "charcoal",
+        "fam"
+      ],
+      "min_price": 1.0,
+      "max_price": 50.0,
+      "units": [
+        "bag",
+        "bowl",
+        "olonka"
+      ],
+      "source": "curated"
+    },
+    {
+      "canonical": "Sellotape",
+      "category": "household",
+      "variants": [
+        "Sellotape",
+        "sellotape",
+        "tape"
+      ],
+      "min_price": 0.5,
+      "max_price": 10.0,
+      "units": [
+        "piece",
+        "roll"
+      ],
+      "source": "curated"
+    }
+  ]
+}

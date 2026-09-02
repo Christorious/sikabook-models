@@ -1,0 +1,83 @@
+# Ghanaian Pidgin market dialogue — sale completions, price quotes,
+# negotiation, buyer requests. One sentence per line, lowercase.
+# Sources: trading_corpus.txt style guide + GhanaNLP Pidgin examples;
+# review with native speakers before treating as canonical.
+i sold three tins of titus
+i sold two bowls of gari
+i sold the last indomie for ten cedis
+buyer take four sachet water
+she take two black bags
+he take five pure water for two cedis
+how much be dis one
+how much be the tilapia
+the price be thirty cedis
+my last price be twenty five cedis
+na twenty cedis be the last
+abeg reduce am for me
+abeg make you do small
+chale the price be too much
+the thing be too much
+make we do fifteen cedis
+make we do am like dat
+i go give you five cedis
+i get only forty cedis
+i no go take am like dat
+e be ten cedis
+e be fifty pesewas
+you dey sell indomie
+you dey sell cold pure water
+you get dettol soap
+i dey come back
+i dey come
+i go come back tomorrow
+give me two packets of sugar
+give me one tin of milk
+bring two pure water give me
+the sachet water be five cedis
+three cedis for one
+two for five cedis
+i don buy am
+i pay twenty cedis already
+she don pay the money
+the money be forty cedis
+first price be fifty cedis
+i finish am for twenty cedis
+we agree for thirty cedis
+okay i go take am
+okay make i take two
+wrap am for me
+put am inside bag
+the small one be how much
+the big one be thirty cedis
+small size be ten cedis
+big size be twenty cedis
+give me the small one
+i want the big one
+no be so the price be
+dat one be fifteen cedis
+dis one be fresh
+the fish be fresh
+the tomato be fresh today
+you sabi the price
+how you dey sell am
+na so we dey sell am
+everything be ten cedis
+i sell am ten cedis
+i sell am for ten cedis
+buyer pay forty cedis
+customer pay thirty cedis
+madam buy two kokoo of pepper
+auntie buy three onions
+the woman buy five tins
+the man take one gallon of oil
+my customer dey come
+plenty people dey come today
+small small we go do am
+no vex the price be fixed
+the price no dey change
+market dey bore today
+sales dey go well
+today my sales reach two hundred cedis
+i make three hundred cedis today
+morning sales be eighty cedis
+afternoon sales better pass morning

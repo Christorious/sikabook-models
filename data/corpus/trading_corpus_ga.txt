@@ -1,0 +1,33 @@
+# Ga market phrases — MINIMAL SET, needs native-speaker review before use
+# in any shipped model. The 40h Ga portion of the Ashesi Financial Inclusion
+# dataset is the real Ga training material; this file only seeds the most
+# common market patterns so the LM has some Ga context.
+# Verified vocabulary is kept deliberately small.
+bawo
+bawo lɛ
+nyɛ bawo
+joo bawo
+kɛji akɛ yaa
+ekome
+enye
+ete
+ejwe
+enumo
+ekome cedis
+enye cedis
+ete cedis
+enumo cedis
+mɔ́
+maba
+naa
+komi
+komi ekome
+sumbre
+ojoo
+ntsɛ
+ntsɛ mli
+mli akɛ
+akɛ yoo
+shwɛ
+shishee
+kwεmɔ

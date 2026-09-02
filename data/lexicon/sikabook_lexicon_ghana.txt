@@ -1,0 +1,121 @@
+# SikaBook Ghanaian lexicon — pronunciations for words the base Vosk model
+# does NOT have in its compiled lexicon (verified against HCLr.fst on
+# 2026-09-02: cedi/cedis/pesewas/kenkey/waakye etc. are unreachable).
+#
+# IMPORTANT: appending these to the Vosk words.txt does NOT make them
+# recognizable — the lexicon is compiled inside HCLr.fst and the shipped
+# model has no tree/phone files to recompile it. These entries are used by:
+#   1. the zipformer fine-tune track (asr/zipformer) where the lexicon is
+#      a plain training artifact, and
+#   2. any future full Vosk graph rebuild.
+# Phonemes: CMU/ARPABET. Twi ɛ->EH, ɔ->AO. Ghanaian-accented approximations
+# for loanwords; verify with native recordings before acoustic training.
+#
+# Format: <word> <phonemes...>
+cedi S IY D IY
+cedis S IY D IH S
+cedies S IY D IY Z
+pesewa P IY S IY W AA
+pesewas P IY S IY W AA Z
+kenkey K EH N K EY
+waakye W AA CH EY
+jollof JH AH L AH F
+shito SH IY T OW
+sobolo S OW B OW L OW
+bissap B IH S AE P
+lamugin L AA M UW G IH N
+indomie IH N D OW M IY
+voltic V OW L T IH K
+dettol D EH T OW L
+cocoyam K OW K OW Y AE M
+pawpaw P AO P AO
+pomade P AA M EY D
+sellotape S EH L AH T EY P
+abena AH B EH N AH
+adwoa AH JH W AA
+afia AH F IY AH
+akosua AH K OW S W AA
+akua AH K UW AH
+efua EH F W AH
+ekow EH K OW
+kwesi K W EY S IY
+yaa Y AA
+kookoo K UW K UW
+olonka OW L AA N K AH
+frytol F R AY T AO L
+kpanla P AA N L AA
+titus T AY T AH S
+apateshi AH P AH T EH SH IY
+tuo T UW OW
+herring HH EH R IH NG
+adwene AH D W EH N EH
+baako B AA K OW
+mmienu M IY EH N UW
+mmiensa M IY EH N S AH
+ɛnan EH N AA N
+enan EH N AA N
+ɛnum EH N UW M
+enum EH N UW M
+nsia N S IY AH
+ensia EH N S IY AH
+nson N S AH N
+ɛnnson EH N S AH N
+ennson EH N S AH N
+nwɔtwe N W AO T W EH
+nwotwe N W AO T W EH
+nnwɔtwe N W AO T W EH
+nkron N K R AH N
+nkrɔn N K R AH N
+du D UW
+dun D AH N
+aduonu AA D W AA N UW
+aduasa AA D W AA S AH
+aduanan AA D W AA N AA N
+aduonum AA D W AA N AH M
+aduosia AA D W AA S IY AH
+aduonson AA D W AA N S AH N
+aduonsia AA D W AA N S IY AH
+aduɔwɔtwe AA D W AA W AO T W EH
+aduowotwe AA D W AA W AO T W EH
+aduonkron AA D W AA N K R AH N
+aduonkrɔn AA D W AA N K R AH N
+ɔha AO HH AH
+oha AO HH AH
+ahaanu AH HH AA N UW
+ahasa AH HH AA S AH
+ahanan AH HH AA N AA N
+ahanum AH HH AA N AH M
+ahaasia AH HH AA S IY AH
+apem AA P EH M
+mpem M P EH M
+ɔpepe AO P EH P EH
+opepe AO P EH P EH
+mepɛ M EH P EH
+me pɛ M EH P EH
+tɔn T AH N
+mɛtua M EH T UW AH
+medaase M EH D AA S EH
+dɔɔso D AO S OW
+kakra K AA K R AH
+borɔdeɛ B AO R AO D EH
+borode B AO R AO D EH
+bankye B AA N K Y EH
+amba AH M B AH
+ntrowa N T R OW W AH
+awule AA W UW L EH
+nkatie N K AA T IY
+gobe G OW B EH
+fam F AA M
+komi K OW M IY
+sɛn S EH N
+ɛyɛ EH Y EH
+eye EH Y EH
+bawo B AA W OW
+ekome EH K OW M EH
+enye EH N Y EH
+ete EH T EH
+ejwe EH JH W EH
+enumo EH N UW M OW
+chalɛ CH AH L EH
+chale CH AH L EH
+abeg AH B EH G

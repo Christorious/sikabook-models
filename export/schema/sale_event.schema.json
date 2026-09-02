@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Christorious/sikabook-models/export/schema/sale_event.schema.json",
+  "title": "SikaBook SaleEvent",
+  "description": "Contract between the on-device model pipeline (ASR + NLU) and the ghana-voice-ledger app. Field names and semantics mirror the Room entity Transaction (data/local/entity/Transaction.kt). Every consumer and producer of sale events MUST validate against this schema.",
+  "type": "object",
+  "required": ["schema_version", "event_id", "timestamp", "is_sale", "confidence"],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1,
+      "description": "Bump on breaking changes. Consumers must reject versions they don't understand."
+    },
+    "event_id": {
+      "type": "string",
+      "description": "UUID for this event. Becomes Room Transaction.id."
+    },
+    "timestamp": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Unix epoch milliseconds when the sale utterance ended (not when processed). Becomes Transaction.timestamp; Transaction.date is derived as YYYY-MM-DD local."
+    },
+    "is_sale": {
+      "type": "boolean",
+      "description": "NLU decision that a completed sale occurred in this utterance. false events are logged for QA only, never written to Room."
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Overall NLU confidence. Mirrors Transaction.confidence."
+    },
+    "amount": {
+      "type": ["number", "null"],
+      "exclusiveMinimum": 0,
+      "description": "Sale total in GHS. Pesewas must be converted (e.g. 'fifty pesewas' -> 0.50). Mirrors Transaction.amount/finalPrice."
+    },
+    "currency": {
+      "type": "string",
+      "const": "GHS"
+    },
+    "product": {
+      "type": ["string", "null"],
+      "description": "Canonical product name from the product vocabulary (data/nlu/product_vocabulary.json), not the raw surface form. Mirrors Transaction.product."
+    },
+    "product_surface": {
+      "type": ["string", "null"],
+      "description": "The raw form heard in speech, before canonicalization (e.g. 'apateshi' when product='Tilapia')."
+    },
+    "quantity": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "maximum": 10000,
+      "description": "Number of items. Null when not detectable. Mirrors Transaction.quantity."
+    },
+    "unit": {
+      "type": ["string", "null"],
+      "description": "Normalized measurement unit: piece|bowl|bucket|tin|can|size|pack|bag|sachet|dozen|crate|gallon. Ghanaian surface forms canonicalize: 'kokoo'->bowl, 'rubber'->bucket. Mirrors Transaction.unit."
+    },
+    "unit_price": {
+      "type": ["number", "null"],
+      "exclusiveMinimum": 0,
+      "description": "Per-item price when quantity is present and 'each'/'per' semantics were heard. Informational; the sale total is amount."
+    },
+    "original_price": {
+      "type": ["number", "null"],
+      "exclusiveMinimum": 0,
+      "description": "Price quoted before negotiation/discount, when both are heard. Mirrors Transaction.originalPrice."
+    },
+    "language": {
+      "type": ["string", "null"],
+      "enum": ["en-GH", "tw", "gaa", "pidgin", "mixed", null],
+      "description": "Dominant language of the utterance as decided by ASR/LID. Mirrors SpeakerProfile.preferredLanguage conventions."
+    },
+    "transcript": {
+      "type": ["string", "null"],
+      "description": "ASR transcript of the utterance. Mirrors Transaction.transcriptSnippet."
+    },
+    "speaker_role_confidence": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Confidence that the speaker of the utterance is the seller. Mirrors Transaction.sellerConfidence."
+    },
+    "needs_review": {
+      "type": "boolean",
+      "default": false,
+      "description": "True when confidence < thresholds or validation issues exist. Mirrors Transaction.needsReview."
+    },
+    "validation_issues": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Human-readable reasons the event was flagged (e.g. 'amount below product min price')."
+    },
+    "utterance_start_ms": {
+      "type": ["integer", "null"],
+      "description": "Audio stream offset of utterance start, for debugging/replay."
+    },
+    "extractor": {
+      "type": ["string", "null"],
+      "description": "Which stage produced the event: 'rules' | 'bert' | 'llm'. For routing metrics in eval."
+    }
+  },
+  "additionalProperties": false
+}

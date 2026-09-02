@@ -1,0 +1,100 @@
+# Asante/Akuapem Twi market phrases — Akan is the biggest language in the
+# Ashesi Financial Inclusion dataset, and these patterns bias the LM toward
+# Twi numerals + product names. One sentence per line, lowercase.
+# Orthography: common no-diacritic spellings included in the lexicon.
+# Review with native speakers; Twi grammar is not fully captured here.
+mepɛ apateshi mmienu
+mepɛ apateshi baako
+mepɛ kpanla mmiɛnsa
+mepɛ kenkey baako
+mepɛ kookoo mmiensa
+mepɛ olonka mmienu
+apateshi mmienu aduonu cedis
+apateshi baako du cedis
+kpanla baako dun cedis
+kpanla mmienu aduonu cedis
+kenkey baako aduonum pesewas
+kenkey mmienu cedis baako
+ɛyɛ sɛn
+eye sɛn
+ɛyɛ cedis ehen
+eye aduasa cedis
+eye aduonum cedis
+aduasa cedis
+aduonu cedis
+aduonum cedis
+aduanan cedis
+aduasa mmiensa cedis
+aduasa enum cedis
+ɔha cedis
+apem cedis
+ɔha ne aduasa cedis
+tɔn ma me
+mebɛtɔn wo
+mepɛ sɛ metɔ
+mede aduasa cedis
+mɛtua wo aduonum cedis
+mɛtua wo
+yeboa
+eye dɔɔso
+eye bo
+te so
+te so kakra
+gye aduasa
+gye me
+da yie
+medaase
+medaase paa
+wo tɔn deɛ
+ɛno deɛ aduasa
+yein deɛ aduonu
+ɛyɛ na
+sɛn na ɛyɛ
+wo pɛ deɛn
+mepɛ bi
+mepɛ kakra
+kakra bi
+ma me kakra
+brɔfo kasa
+ɔtɔfo ba
+amaneɛ
+kɔkɔɔ
+kakrakraba
+apateshi wɔ ha
+kpanla wɔ ha
+kenkey wɔ ha
+nkatie wɔ ha
+borɔdeɛ wɔ ha
+bankye wɔ ha
+ntrowa wɔ ha
+awule wɔ ha
+tɔn
+na tɔn
+maame tɔn apateshi
+ɔbaa tɔn kenkey
+barima tɔ aduasa
+me pɛ sɛ mɛtɔ
+ye pa
+eye fɛ
+eye yie
+anea eye wo
+kɔ hwɛ
+bra hɔ
+bra ha
+me reba
+woreba
+obaa reba
+tɔn ma no
+tɔn ma wɔn
+wɔatua
+watua cedis aduasa
+watua apem
+owuɔ
+sika
+sika aduasa
+sika no
+broni sika
+meka sika
+sika nni hɔ
+menni sika
+cedis nni me nsa

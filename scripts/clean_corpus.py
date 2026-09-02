@@ -10,6 +10,7 @@ Usage:
     python3 scripts/clean_corpus.py
 """
 
+import glob
 import os
 import re
 import sys
@@ -17,7 +18,10 @@ import sys
 # Paths relative to project root
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-INPUT_PATH = os.path.join(PROJECT_ROOT, "data", "corpus", "trading_corpus.txt")
+CORPUS_DIR = os.path.join(PROJECT_ROOT, "data", "corpus")
+# All trading corpus files (main + language additions); generated files excluded
+INPUT_GLOB = os.path.join(CORPUS_DIR, "trading_corpus*.txt")
+EXCLUDE = ("clean", "filtered")
 OUTPUT_PATH = os.path.join(PROJECT_ROOT, "data", "corpus", "trading_corpus.clean.txt")
 
 
@@ -38,18 +42,23 @@ def clean_line(line):
 
 
 def main():
-    if not os.path.exists(INPUT_PATH):
-        print("ERROR: Corpus not found at", INPUT_PATH)
+    input_paths = sorted(
+        p for p in glob.glob(INPUT_GLOB)
+        if not any(tag in os.path.basename(p) for tag in EXCLUDE)
+    )
+    if not input_paths:
+        print("ERROR: No corpus files found at", INPUT_GLOB)
         sys.exit(1)
 
-    with open(INPUT_PATH, "r", encoding="utf-8") as f:
-        lines = f.readlines()
-
     clean_lines = []
-    for line in lines:
-        cleaned = clean_line(line)
-        if cleaned:
-            clean_lines.append(cleaned)
+    for input_path in input_paths:
+        with open(input_path, "r", encoding="utf-8") as f:
+            for line in f:
+                if line.lstrip().startswith("#"):
+                    continue  # comment headers in language corpus files
+                cleaned = clean_line(line)
+                if cleaned:
+                    clean_lines.append(cleaned)
 
     # Deduplicate while preserving order
     seen = set()
@@ -64,7 +73,9 @@ def main():
             f.write(line + "\n")
 
     print("Corpus cleaned successfully.")
-    print("  Input:   {} ({} lines)".format(INPUT_PATH, len(lines)))
+    print("  Inputs:  {} files".format(len(input_paths)))
+    for p in input_paths:
+        print("    -", os.path.relpath(p, PROJECT_ROOT))
     print("  Output:  {} ({} unique lines)".format(OUTPUT_PATH, len(unique_lines)))
 
     # Print vocabulary stats

@@ -1,74 +1,112 @@
-# SikaBook Models — Open-Source Vosk Speech Models for Ghana
+# SikaBook Models — On-Device Speech + Sale-Extraction Models for Ghana
 
-Offline speech recognition models tuned for Ghanaian market traders.
-Built on [Vosk](https://alphacephei.com/vosk/) / [Kaldi](https://github.com/kaldi-asr/kaldi), released under Apache 2.0.
+Offline models for a real-time voice agent that listens to customer–trader
+conversations in Ghanaian markets, detects sales, and extracts item,
+quantity, price (GHS) and time — **entirely on the phone**.
 
-## Why this exists
+Companion repo: [ghana-voice-ledger](https://github.com/Christorious/ghana-voice-ledger)
+(the Android app). The interface between the two is the
+[SaleEvent contract](export/SALE_EVENT_CONTRACT.md).
 
-[SikaBook](../sikabook) is a voice-powered bookkeeping app for Ghanaian traders.
-The default Vosk English model is trained on American speech and doesn't know
-market vocabulary (polythene bags, sachet water, cedis, pesewas) or Ghanaian
-names (Ama, Kofi, Adwoa, Kwame). This project fixes that.
+## Device target (researched, Sept 2026)
 
-## The three tiers
+| Tier | Device | RAM | Stack |
+|---|---|---|---|
+| Floor | Tecno Pop / itel A-class | 3 GB | VAD + streaming ASR + rules |
+| **Typical** | **Tecno Spark 30C/40 (Helio G81)** | **4 GB** | VAD + zipformer ASR + rules + MiniLM NLU |
+| Upgrade | 6 GB+ / used flagships | 6–8 GB | + Qwen3-0.6B normalization (llama.cpp, GBNF) |
 
-| Tier | What | Where it runs | GPU needed | Effort |
-|------|------|---------------|------------|--------|
-| **1** | Language model adaptation (vocabulary + grammar) | Your laptop | No | Days |
-| **2** | Acoustic model fine-tune (Ghanaian English accent) | Kaggle (free GPU) | Yes | Weeks |
-| **3** | New models for Twi, Ewe, Ga, Dagbani | Kaggle + Colab (free GPU) | Yes | Months |
+CPU-only inference (int8) — NPUs on Unisoc/Helio are unusable by third-party
+apps. "8GB" on Tecno spec sheets is 4 GB + virtual RAM; do not design for it.
 
-## Quick start — Tier 1 (runs on your laptop today)
+## The three model stages
+
+```
+mic foreground service → Silero VAD (sherpa-onnx)
+  → streaming zipformer ASR  (target)  / adapted Vosk (baseline, built)
+  → speaker embeddings (WeSpeaker) → seller-vs-customer
+  → SaleEvent NLU: rules (always) → MiniLM intent+NER (always)
+     → Qwen3-0.6B normalization (6 GB+ only, post-utterance)
+  → SaleEvent JSON → app confirm UI → Room `transactions`
+```
+
+| Stage | Model | Size | Status |
+|---|---|---|---|
+| VAD | Silero v5 (via sherpa-onnx) | 1.7 MB | off-the-shelf |
+| ASR baseline | vosk-model-small-en-us + market LM | ~41 MB | **built** (`models/sikabook-en-gh-v1`) |
+| ASR target | streaming zipformer, fine-tuned on Ashesi CC-BY data | 40–80 MB int8 | recipe ready (`asr/zipformer/`) |
+| NLU rules | this repo, Python reference (port of app's GhanaEntityExtractor + Twi/Ga numerals) | — | **built + tested** |
+| NLU BERT | MiniLM intent+NER, ONNX int8 | ~25 MB | training script ready |
+| NLU LLM | Qwen3-0.6B Q4 + sale_event.gbnf | ~0.4 GB | optional tier, gated |
+
+## Repo layout
+
+```
+data/
+  corpus/            trading corpus: EN + Pidgin + Twi + Ga (sentence files)
+  lexicon/           ARPABET lexicons (incl. Ghanaian words the base model lacks)
+  datasets/ashesi/   download + prep for the 148h CC-BY-4.0 Ashesi dataset
+  nlu/               product vocabulary, synthetic generator, labeling guide,
+                     asr_postprocess_map.json (cedes->cedis)
+asr/
+  vosk/              baseline track: docs + limitation notes
+  zipformer/         target track: fine-tune recipe + Kaggle notebook
+nlu/
+  rules/             sika_rules package: deterministic SaleEvent extractor + tests
+  bert/              MiniLM intent+NER fine-tune + ONNX export script
+  llm/               Qwen3 GBNF grammar + gating notes
+eval/                sikabook_eval: WER, sale P/R/F1, slot F1, amount accuracy
+export/              SaleEvent JSON schema + contract, package_android.sh
+docs/                license matrix, tiered roadmap
+```
+
+## Quick start
 
 ```bash
-# 1. Install Kaldi (one-time, ~30 min compile)
-git clone https://github.com/kaldi-asr/kaldi.git
-cd kaldi/tools && make
-extras/install_opengrm.sh
+# 1. NLU rules (no dependencies, 45 tests)
+python3 -m unittest discover -s nlu/rules/tests
+python3 -m unittest discover -s eval/tests
+python3 nlu/rules/extract.py "i sold two tilapia at ten cedis each"
 
-# 2. Clean the corpus
-python3 scripts/clean_corpus.py
+# 2. Vosk baseline model (needs OpenFST/OpenGrM; ~10 min)
+./scripts/build_lm.sh        # clean -> filter -> rebuild Gr.fst -> package
 
-# 3. Build the adapted language model
-./scripts/build_lm.sh
+# 3. Synthetic NLU data + rules baseline metrics
+python3 data/nlu/synthetic_generator.py --n 3000
+
+# 4. Ashesi dataset (license check first: docs/LICENSE-MATRIX.md)
+./data/datasets/ashesi/download_ashesi.sh
+python3 data/datasets/ashesi/prepare_ashesi.py --max-hours 2   # smoke
+
+# 5. Package a model bundle for the app
+./export/package_android.sh
 ```
 
-See [docs/TIER1-SETUP.md](docs/TIER1-SETUP.md) for detailed instructions.
+## Status (2026-09-02)
 
-## Project structure
+| Milestone | State |
+|---|---|
+| M0 schema/contract/eval/rules | **done** — 45 tests green |
+| M1 Vosk baseline | **done with caveat** — grammar rebuilt on recognizable vocab only; Ghana-specific words need the zipformer (Vosk lexicon is compiled-in; see `asr/vosk/README.md`) |
+| M2 zipformer + Ashesi | scripts/recipe/notebook ready; **license file inside archives must be verified**, then Kaggle run |
+| M3 NLU v1 | synthetic data + rules baseline done (sale F1 1.0, amount exact 98% on synthetic; real recordings will be lower); BERT script ready |
+| M4 LLM tier | grammar + gating doc ready; Go/No-Go after on-device latency test |
+| M5 integration + field | blocked on app's compile-fix PR (#43); sherpa-onnx AAR plan documented |
 
-```
-sikabook-models/
-├── data/
-│   ├── corpus/
-│   │   └── trading_corpus.txt       # ~1,200 trader sentences (SikaBook vocabulary)
-│   └── lexicon/
-│       └── sikabook_lexicon.txt     # Phonetic dictionary (starter)
-├── scripts/
-│   ├── clean_corpus.py              # Normalizes corpus text
-│   └── build_lm.sh                  # Builds Gr.fst language model (Tier 1)
-├── models/                          # Output models land here
-├── docs/
-│   ├── TIER1-SETUP.md               # Local setup guide
-│   ├── TIER2-3-KAGGLE.md            # Free GPU training on Kaggle
-│   └── TIER3-GHANAIAN-LANGUAGES.md  # Twi/Ewe/Ga/Dagbani model plans
-└── LICENSE                           # Apache 2.0
-```
+## Key findings baked into this design
 
-## Datasets we build on
-
-| Dataset | Languages | Size | License |
-|---------|-----------|------|---------|
-| [UG Speech Data](https://github.com/HCI-LAB-UGSPEECHDATA) | Akan, Ewe, Dagbani, Dagaare, Ikposo | 5,000 hrs (100h transcribed/lang) | Research use |
-| [WAXAL](https://huggingface.co/datasets/google/WaxalNLP) | Akan, Ewe + 22 African languages | 1,250 hrs ASR | CC-BY-4.0 |
-| [Twi Speech-Text](https://huggingface.co/datasets/ghananlpcommunity/twi-speech-text-multispeaker-16k) | Twi (Akan) | 21,138 pairs | CC-BY-4.0 |
-| [AdwumaTech mghana-st](https://huggingface.co/datasets/adwumatech-ai/mghana-st) | Twi, Ewe, Ga | 7,800+ samples | MIT |
-| [GhanaNLP Parallel Corpora](https://huggingface.co/Ghana-NLP) | Twi, Fante, Ewe, Ga, Kusaal | 41,513 sentence pairs | CC-BY-NC-SA 4.0 |
+- The base Vosk model's compiled lexicon cannot be extended without a full
+  rebuild — appended words (cedis, pesewas, ...) are unrecognizable. Money
+  words survive via the `cedes` homophone + postprocess map; everything
+  else is the zipformer track's job.
+- Ashesi/Nokwary Financial Inclusion Speech Dataset (CC-BY-4.0, ~148 h,
+  Asante/Akuapem Twi, Fante, Ga) is the only confirmed commercially usable
+  finance-domain Ghanaian speech corpus. KasaSpeech and UGSpeechData need
+  written permission. MMS is license-blocked.
+- "PhoneLLM" is either a research artifact (PhoneLM, mllm engine only) or
+  a 30B datacenter telephony model (pipecat) — neither fits; Qwen3 does.
 
 ## License
 
-Apache 2.0 — same as Vosk and Kaldi. See [LICENSE](LICENSE).
-
-Dataset attributions are documented per-dataset; some datasets (UG Speech
-Data) restrict commercial use. Models trained on CC-BY-4.0 data (WAXAL,
-Twi Speech-Text) can be used commercially.
+Apache 2.0 — same as Vosk and Kaldi. Model releases list their training
+data attribution per `docs/LICENSE-MATRIX.md`.
