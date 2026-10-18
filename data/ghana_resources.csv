@@ -9,3 +9,6 @@ JosephAppiah-c/Ghanaian-cultural-lexicon,lexicon,/,cultural lexicon for Ghana,UN
 Ahmed01ttfret/Ghana-Pigin,app,/,Ghanaian Pidgin dictionary app,UNKNOWN,https://github.com/Ahmed01ttfret/Ghana-Pigin
 Christorious/sikabook-models,corpus,data/corpus/trading_corpus.txt,Trading-domain Pidgin/English corpus,APACHE-2.0,https://github.com/Christorious/sikabook-models/blob/main/data/corpus/trading_corpus.txt
 Christorious/sikabook-models,lexicon,data/lexicon/sikabook_lexicon.txt,SikaBook lexicon,APACHE-2.0,https://github.com/Christorious/sikabook-models/blob/main/data/lexicon/sikabook_lexicon.txt
+responsibleailab/ghana-english-twi-code-switched-speech-corpus,speech-dataset,/,"KasaSpeech: 54855 clips, 95+h transcribed EN-Twi code-switched, speaker meta",APACHE-2.0 (Kaggle API 2026-10-18; confirm with RAIL KNUST),https://www.kaggle.com/datasets/responsibleailab/ghana-english-twi-code-switched-speech-corpus
+RAIL-KNUST/GESMA,noise-dataset,/,"Ghanaian environmental soundscapes 22193 WAV / 62.24h; speech excluded; noise augmentation",CC-BY-4.0,https://zenodo.org/records/18315044
+UG-HCI-Lab/UGSpeechData,speech-dataset,/,"Akan/Ewe/Dagaare/Dagbani/Ikposo 5384h audio 518h transcribed; image-description register",RESEARCH-ONLY (CHECK LICENSE),https://www.scidb.cn/en/detail?dataSetId=bbd6baee3acf43bbbc4fe25e21077c8a

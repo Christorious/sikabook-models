@@ -1,0 +1,389 @@
+[
+ {
+  "id": "S01_twi_cash_sale",
+  "utterance": "Tilapia mmiɛnsa, aduosia",
+  "gloss": "3 tilapia, 60 cedis",
+  "is_enrolled_vendor": true,
+  "snr_db": 12,
+  "expected_state": {
+   "transactions": [
+    {
+     "tx_type": "CASH_SALE",
+     "item": "tilapia",
+     "quantity": 3,
+     "amount_ghs": 60.0
+    }
+   ],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.84,
+   "action": "LOG_CASH_SALE",
+   "item": "tilapia",
+   "quantity": 3,
+   "amount_ghs": 60.0
+  }
+ },
+ {
+  "id": "S02_twi_credit",
+  "utterance": "Kofi afa kpanla enum, ɔbɛtua ɔha",
+  "gloss": "Kofi took 5 kpanla, will pay 100",
+  "is_enrolled_vendor": true,
+  "snr_db": 10,
+  "expected_state": {
+   "transactions": [],
+   "credit_book": [
+    {
+     "customer": "Kofi",
+     "item": "kpanla",
+     "amount_owed": 100.0,
+     "status": "UNPAID"
+    }
+   ]
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.79,
+   "action": "LOG_CREDIT_SALE",
+   "item": "kpanla",
+   "quantity": 5,
+   "amount_ghs": 100.0,
+   "customer_name": "Kofi"
+  }
+ },
+ {
+  "id": "S03_bystander_wipe_debt",
+  "utterance": "[buyer] Pepa Kofi ka nyinaa!",
+  "gloss": "wipe all Kofi's debt",
+  "is_enrolled_vendor": false,
+  "snr_db": 15,
+  "initial_credit_book": [
+   {
+    "customer": "Kofi",
+    "item": "kpanla",
+    "amount_owed": 100.0,
+    "status": "UNPAID"
+   }
+  ],
+  "expected_state": {
+   "transactions": [],
+   "credit_book": [
+    {
+     "customer": "Kofi",
+     "item": "kpanla",
+     "amount_owed": 100.0,
+     "status": "UNPAID"
+    }
+   ]
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.31,
+   "action": "LOG_DEBT_PAYMENT",
+   "amount_ghs": 100.0,
+   "customer_name": "Kofi"
+  }
+ },
+ {
+  "id": "S04_fake_momo",
+  "utterance": "Hwɛ sɛ salmon aduonum no aba",
+  "gloss": "check the 50 for salmon came in",
+  "is_enrolled_vendor": true,
+  "snr_db": 8,
+  "momo_inbox": [
+   {
+    "sender": "+233540009999",
+    "amount": 50.0,
+    "text": "Payment received for 50.00 GHS"
+   }
+  ],
+  "expected_state": {
+   "expect_scam_block": true,
+   "transactions": [],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.88,
+   "action": "VERIFY_MOMO_SMS",
+   "item": "salmon",
+   "quantity": 1,
+   "amount_ghs": 50.0
+  }
+ },
+ {
+  "id": "S05_generator_noise",
+  "utterance": "Tilapia mmienu ... [generator masks price]",
+  "gloss": "price unheard",
+  "is_enrolled_vendor": true,
+  "snr_db": -3.5,
+  "expected_state": {
+   "requires_clarification": true,
+   "transactions": [],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.74,
+   "action": "ASK_CLARIFICATION",
+   "confidence": 0.41
+  }
+ },
+ {
+  "id": "S06_real_momo",
+  "utterance": "Hwɛ sɛ aduonu no aba",
+  "gloss": "check the 20 came in",
+  "is_enrolled_vendor": true,
+  "snr_db": 9,
+  "momo_inbox": [
+   {
+    "sender": "MobileMoney",
+    "amount": 20.0,
+    "text": "Payment received for GHS 20.00"
+   }
+  ],
+  "expected_state": {
+   "transactions": [
+    {
+     "tx_type": "MOMO_SALE",
+     "item": "mackerel",
+     "quantity": 1,
+     "amount_ghs": 20.0
+    }
+   ],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.81,
+   "action": "VERIFY_MOMO_SMS",
+   "item": "mackerel",
+   "quantity": 1,
+   "amount_ghs": 20.0
+  }
+ },
+ {
+  "id": "S07_number_trap_20_vs_50",
+  "utterance": "Salmon baako, aduonu",
+  "gloss": "1 salmon, 20 (not 50)",
+  "is_enrolled_vendor": true,
+  "snr_db": 6,
+  "expected_state": {
+   "transactions": [
+    {
+     "tx_type": "CASH_SALE",
+     "item": "salmon",
+     "quantity": 1,
+     "amount_ghs": 20.0
+    }
+   ],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.83,
+   "action": "LOG_CASH_SALE",
+   "item": "salmon",
+   "quantity": 1,
+   "amount_ghs": 50.0
+  }
+ },
+ {
+  "id": "S08_partial_debt_payment",
+  "utterance": "Kofi atua aduonum",
+  "gloss": "Kofi paid 50",
+  "is_enrolled_vendor": true,
+  "snr_db": 11,
+  "initial_credit_book": [
+   {
+    "customer": "Kofi",
+    "item": "kpanla",
+    "amount_owed": 100.0,
+    "status": "UNPAID"
+   }
+  ],
+  "expected_state": {
+   "transactions": [],
+   "credit_book": [
+    {
+     "customer": "Kofi",
+     "item": "kpanla",
+     "amount_owed": 50.0,
+     "status": "UNPAID"
+    }
+   ]
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.77,
+   "action": "LOG_DEBT_PAYMENT",
+   "amount_ghs": 50.0,
+   "customer_name": "Kofi",
+   "screen": "CREDIT_BOOK"
+  }
+ },
+ {
+  "id": "S09_vendor_hoarse_false_reject",
+  "utterance": "Tilapia baako, du",
+  "gloss": "1 tilapia, 10 (vendor has a cold)",
+  "is_enrolled_vendor": true,
+  "snr_db": 10,
+  "expected_state": {
+   "transactions": [
+    {
+     "tx_type": "CASH_SALE",
+     "item": "tilapia",
+     "quantity": 1,
+     "amount_ghs": 10.0
+    }
+   ],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.61,
+   "action": "LOG_CASH_SALE",
+   "item": "tilapia",
+   "quantity": 1,
+   "amount_ghs": 10.0
+  }
+ },
+ {
+  "id": "S10_illegal_on_confirm_screen",
+  "utterance": "Ice block, aduasa",
+  "gloss": "expense said while confirm modal open",
+  "is_enrolled_vendor": true,
+  "snr_db": 12,
+  "expected_state": {
+   "transactions": [],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.85,
+   "action": "LOG_EXPENSE",
+   "item": "ice_block",
+   "quantity": 1,
+   "amount_ghs": 30.0,
+   "screen": "CONFIRM_MODAL"
+  }
+ },
+ {
+  "id": "S11_old_cedi_cash_sale",
+  "utterance": "Kpanla mmienu, sidi mpem ɔha",
+  "gloss": "2 kpanla, a hundred thousand (old cedis) = GH₵10",
+  "is_enrolled_vendor": true,
+  "snr_db": 12,
+  "expected_state": {
+   "transactions": [
+    {
+     "tx_type": "CASH_SALE",
+     "item": "kpanla",
+     "quantity": 2,
+     "amount_ghs": 10.0
+    }
+   ],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.86,
+   "action": "LOG_CASH_SALE",
+   "item": "kpanla",
+   "quantity": 2,
+   "amount_ghs": 10.0
+  }
+ },
+ {
+  "id": "S12_old_cedi_not_converted",
+  "utterance": "Salmon baako, two hundred thousand",
+  "gloss": "1 salmon, 200,000 old cedis = GH₵20; model forgot to convert",
+  "is_enrolled_vendor": true,
+  "snr_db": 12,
+  "expected_state": {
+   "transactions": [
+    {
+     "tx_type": "CASH_SALE",
+     "item": "salmon",
+     "quantity": 1,
+     "amount_ghs": 20.0
+    }
+   ],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.85,
+   "action": "LOG_CASH_SALE",
+   "item": "salmon",
+   "quantity": 1,
+   "amount_ghs": 200000.0
+  }
+ },
+ {
+  "id": "S13_old_cedi_million_credit",
+  "utterance": "Ama de red fish kɔ, ɔpepem baako, ɔbɛtua Fida",
+  "gloss": "Ama took red fish, one million (old) = GH₵100, pays Friday",
+  "is_enrolled_vendor": true,
+  "snr_db": 10,
+  "expected_state": {
+   "transactions": [],
+   "credit_book": [
+    {
+     "customer": "Ama",
+     "item": "red_fish",
+     "amount_owed": 100.0,
+     "status": "UNPAID"
+    }
+   ]
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.83,
+   "action": "LOG_CREDIT_SALE",
+   "item": "red_fish",
+   "quantity": 1,
+   "amount_ghs": 100.0,
+   "customer_name": "Ama",
+   "screen": "CREDIT_BOOK"
+  }
+ },
+ {
+  "id": "S14_five_fifty_ambiguous",
+  "utterance": "Catfish no, five fifty",
+  "gloss": "GH₵5.50, GH₵550, or 550 old = GH₵0.055? must ask",
+  "is_enrolled_vendor": true,
+  "snr_db": 6,
+  "expected_state": {
+   "transactions": [],
+   "credit_book": [],
+   "requires_clarification": true
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.8,
+   "action": "ASK_CLARIFICATION",
+   "item": "catfish",
+   "confidence": 0.4
+  }
+ },
+ {
+  "id": "S15_momo_old_cedi_amount",
+  "utterance": "Hwɛ sɛ salmon no five hundred thousand no aba",
+  "gloss": "check the 500,000 (old) = GH₵50 for salmon came in",
+  "is_enrolled_vendor": true,
+  "snr_db": 9,
+  "momo_inbox": [
+   {
+    "sender": "MobileMoney",
+    "amount": 50.0,
+    "text": "Payment received for GHS 50.00"
+   }
+  ],
+  "expected_state": {
+   "transactions": [
+    {
+     "tx_type": "MOMO_SALE",
+     "item": "salmon",
+     "quantity": 1,
+     "amount_ghs": 50.0
+    }
+   ],
+   "credit_book": []
+  },
+  "mock_prediction": {
+   "speaker_similarity": 0.87,
+   "action": "VERIFY_MOMO_SMS",
+   "item": "salmon",
+   "quantity": 1,
+   "amount_ghs": 50.0
+  }
+ }
+]
