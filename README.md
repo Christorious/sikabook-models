@@ -56,6 +56,9 @@ nlu/
   bert/              MiniLM intent+NER fine-tune + ONNX export script
   llm/               Qwen3 GBNF grammar + gating notes
 eval/                sikabook_eval: WER, sale P/R/F1, slot F1, amount accuracy
+verifier/            ledger-state grader (+1/+0.5/0/-1): screen-masked action space,
+                     voice gate, FISD/KasaSpeech loaders, GESMA noise remix,
+                     train_tiny baseline. Has its own README.
 export/              SaleEvent JSON schema + contract, package_android.sh
 docs/                license matrix, tiered roadmap
 ```
@@ -63,10 +66,14 @@ docs/                license matrix, tiered roadmap
 ## Quick start
 
 ```bash
-# 1. NLU rules (no dependencies, 45 tests)
+# 1. NLU rules (no dependencies, 49 tests)
 python3 -m unittest discover -s nlu/rules/tests
 python3 -m unittest discover -s eval/tests
+(cd verifier && python3 -m unittest discover -s tests)
 python3 nlu/rules/extract.py "i sold two tilapia at ten cedis each"
+
+# 1b. Ledger-state verifier smoke run (15 scenarios, stdlib only)
+(cd verifier && python3 run_eval.py)
 
 # 2. Vosk baseline model (needs OpenFST/OpenGrM; ~10 min)
 ./scripts/build_lm.sh        # clean -> filter -> rebuild Gr.fst -> package
