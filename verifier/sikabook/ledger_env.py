@@ -1,6 +1,7 @@
 """In-memory SQLite sandbox mirroring the on-device Room schema. One per episode."""
 import sqlite3
 from dataclasses import dataclass
+from typing import Optional
 from .schema import ActionType, ModelActionOutput, SCREEN_ACTION_MASK
 
 
@@ -8,6 +9,11 @@ from .schema import ActionType, ModelActionOutput, SCREEN_ACTION_MASK
 class GateConfig:
     # Placeholders. Tune on real enrolled-vendor data (EER point), don't trust these.
     speaker_threshold: float = 0.68
+    # Below speaker_threshold but at or above this: the utterance is NOT discarded, it is held
+    # for the day-end review she already sits through. The ledger is unchanged either way, but
+    # a held utterance is recoverable and a rejected one is gone for good. None keeps the old
+    # binary gate, so every number measured before this existed still reproduces.
+    review_threshold: Optional[float] = None
     min_confidence: float = 0.55
     max_amount_ghs: float = 20_000.0   # above this, ask instead of writing: catches unconverted old cedis
     official_momo_senders: tuple = ("MobileMoney", "MoMo", "TelecelCash", "AT Money")
@@ -29,12 +35,17 @@ class LocalLedgerSandbox:
                               (row["customer"], row["item"], row["amount_owed"], row["status"]))
         self.momo_inbox = momo_inbox or []
         self.flags = {"blocked_speaker": False, "clarification_requested": False,
-                      "scam_alert": False, "illegal_action": False}
+                      "scam_alert": False, "illegal_action": False,
+                      "deferred_for_review": False}
 
     def step(self, p: ModelActionOutput):
         c = self.cfg
-        if p.speaker_similarity < c.speaker_threshold:          # 1. voice gate
-            self.flags["blocked_speaker"] = True; return
+        if p.speaker_similarity < c.speaker_threshold:          # 1. voice gate: accept / review / reject
+            if c.review_threshold is not None and p.speaker_similarity >= c.review_threshold:
+                self.flags["deferred_for_review"] = True
+            else:
+                self.flags["blocked_speaker"] = True
+            return
         if p.action not in SCREEN_ACTION_MASK[p.screen]:         # 2. screen mask
             self.flags["illegal_action"] = True; return
         if p.action == ActionType.ASK_CLARIFICATION or p.confidence < c.min_confidence:

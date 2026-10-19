@@ -59,7 +59,60 @@ Result (L-BFGS, reproducible): accuracy 81%, score 186/224 (oracle 212), harmful
 MFCC/log-mel stats -> LDA -> cosine vs ONE enrolment clip. Separate LDA-train / dev (threshold) / test speakers.
 First run: dev EER 13%, test EER 26%; at the dev threshold FAR 10%, FRR 46%. Read the script's FAR/FRR line:
 the ledger FAR in run_eval only counts bystanders whose clip would have written money, so it looks better than the gate is.
-Next: pretrained speaker embeddings (ECAPA-TDNN) and 3+ enrolment phrases.
+
+**Those four numbers have to be re-run.** `fit_lda` iterated an unordered set, so the LDA basis followed
+`PYTHONHASHSEED` and changed from process to process. On the smoke corpus that alone swung dev EER between
+0% and 33% with nothing else altered. Fixed in v1 (`sorted(set(...))`), verified identical across four hash
+seeds. Until the re-run, treat the v0 gate line as one draw, not a measurement. `train_tiny.py` was checked
+and is not affected, so the 81% / 186 / 2% line above stands.
+
+## Voice gate v1 (speaker_gate.py)
+    python3 speaker_gate.py --data data/fisd_v0 data/kasa_v0 --encoder ecapa
+    python3 run_eval.py --scenarios data/fisd_v0/scenarios_gate.json \
+                        --preds data/fisd_v0/preds_gate.json --threshold 0.68 --review-threshold 0.5 | tail -2
+Two changes, written because FRR 46% means half her sales never reach the ledger.
+
+**The gate ranks instead of only filtering.** Three tiers, not two: accept (write unasked), review (hold for
+the day-end confirmation she already does), reject. Because she confirms the day anyway, an uncertain
+utterance does not have to be destroyed. `--target-far` sets the accept threshold, `--target-loss` the reject
+threshold, and the script prints queue size per 100 of her utterances, so FRR now trades against review
+burden (ours to choose) instead of coverage (unrecoverable). `GateConfig.review_threshold` defaults to None,
+so every number measured before this existed still reproduces.
+
+**Per-speaker calibration** (`--norm raw|znorm|asnorm`). Score her voiceprint at enrolment against a cohort of
+other speakers that ships with the app, and express later scores in units of her own distribution. `znorm` is
+enrolment-side only and so is exactly equivalent to storing one raw-cosine threshold per trader at setup
+(written to the `.npz` as `spk_thr_lo/hi`, which is what a phone would use - tested for exact agreement);
+`asnorm` also normalises by the test utterance's cohort statistics.
+
+**Session adaptation** (`--adapt`, optional). The most frequent speaker at the stall across a market day is
+her, so her voiceprint is averaged with the utterances the gate already accepted. No labels, only the gate's
+own accepts - and it adapts on her own test-day audio, so it is reported as a session gain, never held-out.
+
+Measured so far, honestly: on real audio, nothing yet - the corpora are not in this repo, and the v0 line
+above has to be re-run after the determinism fix. On synthetic embeddings (`tests/test_gate_math.py`, 28
+tests, no audio needed) and on the smoke corpus, the ranker is the big lever - coverage rises from roughly
+75% to roughly 96% at an unchanged accept threshold, for every calibration and every seed - while `asnorm`
+consistently lowers test EER (smoke corpus: 33.3% -> 22.9%) and `znorm` does not reliably do anything.
+Neither closed the dev-to-test threshold-transfer gap across seeds, which is the reason they were written,
+so that claim is not being made.
+
+**The grader's reward scale is probably wrong, and this is how we found out.** On the smoke corpus the review
+tier cuts the rate at which her own speech is lost from 42% to 6% - the one failure that stops the ledger
+being worth having - and the total score *falls*, 68.0 to 56.5 / 96. The arithmetic is exact: 20 bystander
+utterances moved from +1.0 (cleanly blocked) to 0.0 (noise in her queue), while only 17 of hers moved from
+0.0 (lost) to +0.5 (held). So the scale as written says one cleanly blocked bystander is worth two recovered
+sales, and it would rather lose four sales in ten than put twenty lines in front of her at closing time. Had
+this not been caught it would have silently steered every later model choice the wrong way.
+The four numbers are now `verifier.Rewards`, defaults unchanged and tested to reproduce every earlier result,
+so the question can be settled by changing a number and re-running. It is a product judgement, so it is
+flagged, not retuned.
+
+    python3 tests/smoke_corpus.py --out data/_smoke     # synthetic audio: pipeline check, not data
+    python3 -m unittest discover -s tests -t . -q       # 28 tests, stdlib + numpy, ~2 s
+
+Next: pretrained speaker embeddings on the real corpora (`--encoder ecapa`), 3+ enrolment phrases, and the
+re-run of every number in the v0 line above.
 
 ## Real Ghanaian noise (synth/gesma_noise.py)
     pip3 install --break-system-packages openpyxl
